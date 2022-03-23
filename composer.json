@@ -1,0 +1,33 @@
+{
+  "name": "manzadey/sbuilder-solutions",
+  "type": "project",
+  "keywords": [
+    "sbuilder",
+    "solutions"
+  ],
+  "require": {
+    "php": "^5.3"
+  },
+  "require-dev": {
+    "roave/security-advisories": "dev-latest",
+    "symfony/var-dumper": "2.6"
+  },
+  "autoload": {
+    "classmap": ["solutions/usedesk/src"]
+  },
+  "autoload-dev": {
+    "psr-4": {
+      "Tests\\": "tests/"
+    }
+  },
+  "config": {
+    "platform": {
+      "php": "5.3.3"
+    },
+    "optimize-autoloader": true,
+    "preferred-install": "dist",
+    "sort-packages": true
+  },
+  "minimum-stability": "dev",
+  "prefer-stable": true
+}
