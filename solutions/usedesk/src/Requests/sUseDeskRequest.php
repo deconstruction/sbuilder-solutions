@@ -1,5 +1,8 @@
 <?php
 
+/**
+ * Класс для создания запроса API
+ */
 class sUseDeskRequest
 {
     /**
@@ -43,8 +46,20 @@ class sUseDeskRequest
     }
 
     /**
+     * @param $key
+     *
+     * @return mixed|null
+     */
+    public function getFromBody($key)
+    {
+        return isset($this->body[$key]) ? $this->body[$key] : null;
+    }
+
+    /**
      * @param $values
      * @param $value
+     *
+     * @throws \RuntimeException
      *
      * @return void
      */
@@ -61,11 +76,23 @@ class sUseDeskRequest
     public function push()
     {
         $ch = curl_init($this->client->url . $this->method);
-        curl_setopt($ch, CURLOPT_RETURNTRANSFER, true);
-        curl_setopt($ch, CURLOPT_CUSTOMREQUEST, 'POST');
-        curl_setopt($ch, CURLOPT_TIMEOUT, 10);
-        curl_setopt($ch, CURLOPT_POST, true);
-        curl_setopt($ch, CURLOPT_POSTFIELDS, $this->body);
+
+        $curlOptions = array(
+            CURLOPT_USERAGENT      => 'PHP-MCAPI/2.0',
+            CURLOPT_RETURNTRANSFER => true,
+            CURLOPT_CUSTOMREQUEST  => 'POST',
+            CURLOPT_TIMEOUT        => 10,
+            CURLOPT_MAXREDIRS      => 10,
+            CURLOPT_FOLLOWLOCATION => true,
+            CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
+            CURLOPT_POST           => true,
+            CURLOPT_POSTFIELDS     => $this->body,
+            CURLOPT_HTTPHEADER     => array(
+                'Content-Type: multipart/form-data',
+            ),
+        );
+
+        curl_setopt_array($ch, $curlOptions);
 
         $result = curl_exec($ch);
         if($result) {
@@ -78,5 +105,13 @@ class sUseDeskRequest
             'body'         => $this->body,
             'request_info' => curl_getinfo($ch),
         );
+    }
+
+    /**
+     * @return array
+     */
+    public function getBody()
+    {
+        return $this->body;
     }
 }
