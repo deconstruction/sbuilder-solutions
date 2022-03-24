@@ -91,15 +91,15 @@
                     <ul class="phpdocumentor-breadcrumbs">
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/usedesk.html">UseDesk</a></li>
             <li class="phpdocumentor-breadcrumb"><a href="namespaces/usedesk-requests.html">Requests</a></li>
-            <li class="phpdocumentor-breadcrumb"><a href="namespaces/usedesk-requests-clients.html">Clients</a></li>
+            <li class="phpdocumentor-breadcrumb"><a href="namespaces/usedesk-requests-tickets.html">Tickets</a></li>
     </ul>
 
     <article class="phpdocumentor-element -class">
         <h2 class="phpdocumentor-content__title">
-    sUseDeskRequestCreateClient
+    RequestTicket
 
         <span class="phpdocumentor-element__extends">
-        extends <a href="classes/UseDesk-Requests-sUseDeskRequest.html"><abbr title="\UseDesk\Requests\sUseDeskRequest">sUseDeskRequest</abbr></a>
+        extends <a href="classes/UseDesk-Requests-Request.html"><abbr title="\UseDesk\Requests\Request">Request</abbr></a>
     </span>
     
             <div class="phpdocumentor-element__package">
@@ -113,16 +113,29 @@
     </h2>
 
         <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Ticket/RequestTicket.php"><a href="files/usedesk-requests-ticket-requestticket.html"><abbr title="UseDesk/Requests/Ticket/RequestTicket.php">RequestTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">10</span>
+    <span class="phpdocumentor-element-found-in__line">12</span>
 
     </aside>
 
-            <p class="phpdocumentor-summary">Метод создает нового клиента</p>
+            <p class="phpdocumentor-summary">Метод возвращает тикет по-указанному id. Принимает один id тикета.</p>
 
 
 
+    <h5 class="phpdocumentor-tag-list__heading" id="tags">
+        Tags
+        <a href="#tags" class="headerlink"><i class="fas fa-link"></i></a>
+    </h5>
+    <dl class="phpdocumentor-tag-list">
+                                    <dt class="phpdocumentor-tag-list__entry">
+                    <span class="phpdocumentor-tag__name">link</span>
+                </dt>
+                <dd class="phpdocumentor-tag-list__definition">
+                                                                                                        <a class="phpdocumentor-tag-link" href="https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D1%82%D0%B8%D0%BA%D0%B5%D1%82"> https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D1%82%D0%B8%D0%BA%D0%B5%D1%82 </a>
+                    
+                                    </dd>
+                        </dl>
 
 
 
@@ -136,116 +149,88 @@
 
 <dl class="phpdocumentor-table-of-contents">
                     <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_body">$body</a>
+    <a href="classes/UseDesk-Requests-Request.html#property_body">$body</a>
     <span>
                         &nbsp;: array&lt;string|int, mixed&gt;            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_client">$client</a>
+    <a href="classes/UseDesk-Requests-Request.html#property_client">$client</a>
     <span>
-                        &nbsp;: <a href="classes/UseDesk-sUseDeskClient.html"><abbr title="\UseDesk\sUseDeskClient">sUseDeskClient</abbr></a>            </span>
+                        &nbsp;: <a href="classes/UseDesk-Client.html"><abbr title="\UseDesk\Client">Client</abbr></a>            </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -property -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_method">$method</a>
+    <a href="classes/UseDesk-Requests-Request.html#property_method">$method</a>
     <span>
                         &nbsp;: string            </span>
 </dt>
 <dd></dd>
 
                 <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method___construct">__construct()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method___construct">__construct()</a>
     <span>
                                 &nbsp;: mixed    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_getBody">getBody()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_getBody">getBody()</a>
     <span>
                                 &nbsp;: array&lt;string|int, mixed&gt;    </span>
 </dt>
-<dd></dd>
+<dd>Получит массив запроса</dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_getFromBody">getFromBody()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_getFromBody">getFromBody()</a>
     <span>
                                 &nbsp;: mixed|null    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_push">push()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_push">push()</a>
     <span>
-                                &nbsp;: array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-sUseDeskResponse.html"><abbr title="\UseDesk\sUseDeskResponse">sUseDeskResponse</abbr></a>    </span>
+                                &nbsp;: array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-Response.html"><abbr title="\UseDesk\Response">Response</abbr></a>    </span>
+</dt>
+<dd>Отправляем запрос</dd>
+
+            <dt class="phpdocumentor-table-of-contents__entry -method -public">
+    <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#method_setId">setId()</a>
+    <span>
+                                &nbsp;: self    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setEmails">setEmails()</a>
+    <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#method_setProperties">setProperties()</a>
     <span>
                                 &nbsp;: self    </span>
 </dt>
-<dd>Массив с почтовыми адресами</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMergeId">setMergeId()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Идентификатор клиента, с которым будет объединен пользователь с идентификатором client_id</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMessengers">setMessengers()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Массив с данными мессенджеров</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setName">setName()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Новое имя клиента</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setNote">setNote()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Текст заметки</dd>
-
-            <dt class="phpdocumentor-table-of-contents__entry -method -public">
-    <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setPhone">setPhone()</a>
-    <span>
-                                &nbsp;: self    </span>
-</dt>
-<dd>Телефон пользователя</dd>
+<dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_checkValue">checkValue()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_checkValue">checkValue()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_preparePush">preparePush()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_preparePush">preparePush()</a>
     <span>
                                 &nbsp;: void    </span>
 </dt>
 <dd></dd>
 
             <dt class="phpdocumentor-table-of-contents__entry -method -protected">
-    <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_setBody">setBody()</a>
+    <a href="classes/UseDesk-Requests-Request.html#method_setBody">setBody()</a>
     <span>
                                 &nbsp;: $this    </span>
 </dt>
-<dd></dd>
+<dd>Обновляем значение в теле запроса</dd>
 
         </dl>
 
@@ -257,7 +242,7 @@
     <section class="phpdocumentor-properties">
         <h3 class="phpdocumentor-elements__header" id="properties">
             Properties
-            <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#properties" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="
@@ -268,12 +253,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_body">
         $body
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_body" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#property_body" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">27</span>
 
@@ -300,12 +285,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_client">
         $client
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_client" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#property_client" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">17</span>
 
@@ -314,7 +299,7 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-        <span class="phpdocumentor-signature__type"><a href="classes/UseDesk-sUseDeskClient.html"><abbr title="\UseDesk\sUseDeskClient">sUseDeskClient</abbr></a></span>
+        <span class="phpdocumentor-signature__type"><a href="classes/UseDesk-Client.html"><abbr title="\UseDesk\Client">Client</abbr></a></span>
     <span class="phpdocumentor-signature__name">$client</span>
     </code>
 
@@ -332,12 +317,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="property_method">
         $method
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#property_method" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#property_method" class="headerlink"><i class="fas fa-link"></i></a>
         <span class="phpdocumentor-element__modifiers">
                                 </span>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">22</span>
 
@@ -360,7 +345,7 @@
             <section class="phpdocumentor-methods">
         <h3 class="phpdocumentor-elements__header" id="methods">
             Methods
-            <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
+            <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#methods" class="headerlink"><i class="fas fa-link"></i></a>
         </h3>
                     <article
         class="phpdocumentor-element
@@ -370,10 +355,10 @@
 >
     <h4 class="phpdocumentor-element__name" id="method___construct">
         __construct()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method___construct" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">33</span>
 
@@ -382,14 +367,14 @@
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/UseDesk-sUseDeskClient.html"><abbr title="\UseDesk\sUseDeskClient">sUseDeskClient</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
+                <span class="phpdocumentor-signature__name">__construct</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href="classes/UseDesk-Client.html"><abbr title="\UseDesk\Client">Client</abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$client</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$method</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">mixed</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$client</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/UseDesk-sUseDeskClient.html"><abbr title="\UseDesk\sUseDeskClient">sUseDeskClient</abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type"><a href="classes/UseDesk-Client.html"><abbr title="\UseDesk\Client">Client</abbr></a></span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -419,16 +404,17 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getBody">
         getBody()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_getBody" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_getBody" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">121</span>
+    <span class="phpdocumentor-element-found-in__line">127</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Получит массив запроса</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
                 <span class="phpdocumentor-signature__name">getBody</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;</span></code>
@@ -451,12 +437,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_getFromBody">
         getFromBody()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_getFromBody" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_getFromBody" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">59</span>
+    <span class="phpdocumentor-element-found-in__line">61</span>
 
     </aside>
 
@@ -493,26 +479,27 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_push">
         push()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_push" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_push" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">82</span>
+    <span class="phpdocumentor-element-found-in__line">86</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Отправляем запрос</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">push</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-sUseDeskResponse.html"><abbr title="\UseDesk\sUseDeskResponse">sUseDeskResponse</abbr></a></span></code>
+                <span class="phpdocumentor-signature__name">push</span><span>(</span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-Response.html"><abbr title="\UseDesk\Response">Response</abbr></a></span></code>
 
     
     
     
 
         <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-sUseDeskResponse.html"><abbr title="\UseDesk\sUseDeskResponse">sUseDeskResponse</abbr></a></span>
+    <span class="phpdocumentor-signature__response_type">array&lt;string|int, mixed&gt;|<a href="classes/UseDesk-Response.html"><abbr title="\UseDesk\Response">Response</abbr></a></span>
             &mdash;
         
     
@@ -523,151 +510,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setEmails">
-        setEmails()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setEmails" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setId">
+        setId()
+        <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#method_setId" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">31</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Массив с почтовыми адресами</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setEmails</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setMergeId">
-        setMergeId()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMergeId" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">85</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Идентификатор клиента, с которым будет объединен пользователь с идентификатором client_id</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMergeId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setMessengers">
-        setMessengers()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMessengers" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">49</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Массив с данными мессенджеров</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setMessengers</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setName">
-        setName()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setName" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Ticket/RequestTicket.php"><a href="files/usedesk-requests-ticket-requestticket.html"><abbr title="UseDesk/Requests/Ticket/RequestTicket.php">RequestTicket.php</abbr></a></abbr>
     :
     <span class="phpdocumentor-element-found-in__line">19</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Новое имя клиента</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setName</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">setId</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -695,65 +552,21 @@
             -public
                                                         "
 >
-    <h4 class="phpdocumentor-element__name" id="method_setNote">
-        setNote()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setNote" class="headerlink"><i class="fas fa-link"></i></a>
+    <h4 class="phpdocumentor-element__name" id="method_setProperties">
+        setProperties()
+        <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#method_setProperties" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Ticket/RequestTicket.php"><a href="files/usedesk-requests-ticket-requestticket.html"><abbr title="UseDesk/Requests/Ticket/RequestTicket.php">RequestTicket.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">61</span>
+    <span class="phpdocumentor-element-found-in__line">29</span>
 
     </aside>
 
-        <p class="phpdocumentor-summary">Текст заметки</p>
-
+    
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setNote</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
-
-    
-        <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
-    <dl class="phpdocumentor-argument-list">
-                    <dt class="phpdocumentor-argument-list__entry">
-                <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
-                            </dt>
-            <dd class="phpdocumentor-argument-list__definition">
-                
-            </dd>
-            </dl>
-
-    
-
-        <h5 class="phpdocumentor-return-value__heading">Return values</h5>
-    <span class="phpdocumentor-signature__response_type">self</span>
-            &mdash;
-        
-    
-</article>
-                    <article
-        class="phpdocumentor-element
-            -method
-            -public
-                                                        "
->
-    <h4 class="phpdocumentor-element__name" id="method_setPhone">
-        setPhone()
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setPhone" class="headerlink"><i class="fas fa-link"></i></a>
-    </h4>
-    <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/Client/sUseDeskRequestCreateClient.php"><a href="files/requests-client-susedeskrequestcreateclient.html"><abbr title="Requests/Client/sUseDeskRequestCreateClient.php">sUseDeskRequestCreateClient.php</abbr></a></abbr>
-    :
-    <span class="phpdocumentor-element-found-in__line">73</span>
-
-    </aside>
-
-        <p class="phpdocumentor-summary">Телефон пользователя</p>
-
-    <code class="phpdocumentor-code phpdocumentor-signature ">
-    <span class="phpdocumentor-signature__visibility">public</span>
-                <span class="phpdocumentor-signature__name">setPhone</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
+                <span class="phpdocumentor-signature__name">setProperties</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">self</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
@@ -783,33 +596,33 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_checkValue">
         checkValue()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_checkValue" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_checkValue" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">72</span>
+    <span class="phpdocumentor-element-found-in__line">74</span>
 
     </aside>
 
     
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
-                <span class="phpdocumentor-signature__name">checkValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a>&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
+                <span class="phpdocumentor-signature__name">checkValue</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;&nbsp;</span><span class="phpdocumentor-signature__argument__name">$values</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">scalar&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">void</span></code>
 
     
         <h5 class="phpdocumentor-argument-list__heading">Parameters</h5>
     <dl class="phpdocumentor-argument-list">
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$values</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">array&lt;string|int, mixed&gt;</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
             </dd>
                     <dt class="phpdocumentor-argument-list__entry">
                 <span class="phpdocumentor-signature__argument__name">$value</span>
-                : <span class="phpdocumentor-signature__argument__return-type"><a href=""><abbr title=""></abbr></a></span>
+                : <span class="phpdocumentor-signature__argument__return-type">scalar</span>
                             </dt>
             <dd class="phpdocumentor-argument-list__definition">
                 
@@ -846,12 +659,12 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_preparePush">
         preparePush()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_preparePush" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_preparePush" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">129</span>
+    <span class="phpdocumentor-element-found-in__line">135</span>
 
     </aside>
 
@@ -878,16 +691,17 @@
 >
     <h4 class="phpdocumentor-element__name" id="method_setBody">
         setBody()
-        <a href="classes/UseDesk-Requests-sUseDeskRequest.html#method_setBody" class="headerlink"><i class="fas fa-link"></i></a>
+        <a href="classes/UseDesk-Requests-Request.html#method_setBody" class="headerlink"><i class="fas fa-link"></i></a>
     </h4>
     <aside class="phpdocumentor-element-found-in">
-    <abbr class="phpdocumentor-element-found-in__file" title="Requests/sUseDeskRequest.php"><a href="files/requests-susedeskrequest.html"><abbr title="Requests/sUseDeskRequest.php">sUseDeskRequest.php</abbr></a></abbr>
+    <abbr class="phpdocumentor-element-found-in__file" title="UseDesk/Requests/Request.php"><a href="files/usedesk-requests-request.html"><abbr title="UseDesk/Requests/Request.php">Request.php</abbr></a></abbr>
     :
-    <span class="phpdocumentor-element-found-in__line">47</span>
+    <span class="phpdocumentor-element-found-in__line">49</span>
 
     </aside>
 
-    
+        <p class="phpdocumentor-summary">Обновляем значение в теле запроса</p>
+
     <code class="phpdocumentor-code phpdocumentor-signature ">
     <span class="phpdocumentor-signature__visibility">protected</span>
                 <span class="phpdocumentor-signature__name">setBody</span><span>(</span><span class="phpdocumentor-signature__argument"><span class="phpdocumentor-signature__argument__return-type">string&nbsp;</span><span class="phpdocumentor-signature__argument__name">$key</span></span><span class="phpdocumentor-signature__argument"><span>, </span><span class="phpdocumentor-signature__argument__return-type">mixed&nbsp;</span><span class="phpdocumentor-signature__argument__name">$value</span></span><span>)</span><span> : </span><span class="phpdocumentor-signature__response_type">$this</span></code>
@@ -997,7 +811,7 @@
 </section>
             </div>
         </div>
-        <a href="classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
+        <a href="classes/UseDesk-Requests-Tickets-RequestTicket.html#top" class="phpdocumentor-back-to-top"><i class="fas fa-chevron-circle-up"></i></a>
 
     </main>
 
