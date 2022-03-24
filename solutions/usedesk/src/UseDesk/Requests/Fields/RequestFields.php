@@ -2,12 +2,12 @@
 
 namespace UseDesk\Requests\Fields;
 
-use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Request;
 
 /**
  * Метод возвращает все дополнительные поля компании
  */
-class sUseDeskRequestFields extends sUseDeskRequest
+class RequestFields extends Request
 {
 
 }

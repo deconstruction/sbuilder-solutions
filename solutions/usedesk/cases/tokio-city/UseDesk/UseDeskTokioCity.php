@@ -2,7 +2,7 @@
 
 namespace UseDesk;
 
-use UseDesk\Requests\Ticket\sUseDeskTokioCityRequestCreateTicket;
+use UseDesk\Requests\Ticket\tokioCityRequestCreateTicket;
 
 class UseDeskTokioCity
 {
@@ -10,12 +10,12 @@ class UseDeskTokioCity
 
     public function __construct()
     {
-        $client        = new sUseDeskTokioCityClient();
+        $client        = new tokioCityClient();
         $this->request = $client->createTicket();
     }
 
     /**
-     * @return sUseDeskTokioCityRequestCreateTicket
+     * @return tokioCityRequestCreateTicket
      */
     public function getRequest()
     {

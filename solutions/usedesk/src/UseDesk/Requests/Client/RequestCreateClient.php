@@ -2,12 +2,12 @@
 
 namespace UseDesk\Requests\Clients;
 
-use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Request;
 
 /**
  * Метод создает нового клиента
  */
-class sUseDeskRequestCreateClient extends sUseDeskRequest
+class RequestCreateClient extends Request
 {
     /**
      * Новое имя клиента

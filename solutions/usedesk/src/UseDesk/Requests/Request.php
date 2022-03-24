@@ -3,16 +3,16 @@
 namespace UseDesk\Requests;
 
 use RuntimeException;
-use UseDesk\sUseDeskClient;
-use UseDesk\sUseDeskResponse;
+use UseDesk\Client;
+use UseDesk\Response;
 
 /**
  * Класс для создания запроса API
  */
-class sUseDeskRequest
+class Request
 {
     /**
-     * @var sUseDeskClient
+     * @var Client
      */
     protected $client;
 
@@ -27,8 +27,8 @@ class sUseDeskRequest
     protected $body = array();
 
     /**
-     * @param sUseDeskClient $client
-     * @param string          $method
+     * @param Client $client
+     * @param string $method
      */
     public function __construct($client, $method)
     {
@@ -39,6 +39,8 @@ class sUseDeskRequest
     }
 
     /**
+     * Обновляем значение в теле запроса
+     *
      * @param string $key
      * @param mixed  $value
      *
@@ -62,8 +64,8 @@ class sUseDeskRequest
     }
 
     /**
-     * @param $values
-     * @param $value
+     * @param array $values
+     * @param scalar $value
      *
      * @throws RuntimeException
      *
@@ -77,7 +79,9 @@ class sUseDeskRequest
     }
 
     /**
-     * @return array|\UseDesk\sUseDeskResponse
+     * Отправляем запрос
+     *
+     * @return array|Response
      */
     public function push()
     {
@@ -104,7 +108,7 @@ class sUseDeskRequest
 
         $result = curl_exec($ch);
         if($result) {
-            return new sUseDeskResponse($this->body, json_decode($result, true));
+            return new Response($this->body, json_decode($result, true));
         }
 
         return array(
@@ -116,6 +120,8 @@ class sUseDeskRequest
     }
 
     /**
+     * Получит массив запроса
+     *
      * @return array
      */
     public function getBody()

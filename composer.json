@@ -6,7 +6,9 @@
     "solutions"
   ],
   "require": {
-    "php": "^5.3"
+    "php": "^5.3",
+    "ext-json": "*",
+    "ext-curl": "*"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master"

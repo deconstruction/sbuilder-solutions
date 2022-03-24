@@ -2,12 +2,12 @@
 
 namespace UseDesk\Requests\Clients;
 
-use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Request;
 
 /**
  * Метод возвращает информацию об указанном клиенте компании. Принимает один id клиента
  */
-class sUseDeskRequestClient extends sUseDeskRequest
+class RequestClient extends Request
 {
     /**
      * @param int $value

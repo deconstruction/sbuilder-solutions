@@ -2,13 +2,13 @@
 
 namespace UseDesk\Requests\Clients;
 
-use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Request;
 
 /**
  * Класс возвращает тикеты, удовлетворяющих заданным условиям фильтров.
  * В методе реализована постраничная разбивка. В ответе максимум 100 записей, для смещения используется параметр offset.
  */
-class sUseDeskRequestClients extends sUseDeskRequest
+class RequestClients extends Request
 {
     /**
      * В выдачу попадут сущности, созданные после указанной даты (включительно)

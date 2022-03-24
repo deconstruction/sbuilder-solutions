@@ -3,14 +3,14 @@
 namespace UseDesk\Requests\Tickets;
 
 use CURLFile;
-use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Request;
 
 /**
  * Класс создает тикет для API канала.
  *
  * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%D1%82%D0%B8%D0%BA%D0%B5%D1%82
  */
-class sUseDeskRequestCreateTicket extends sUseDeskRequest
+class RequestCreateTicket extends Request
 {
     /**
      * @var array

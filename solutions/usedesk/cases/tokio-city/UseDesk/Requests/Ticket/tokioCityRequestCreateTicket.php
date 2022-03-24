@@ -2,9 +2,9 @@
 
 namespace UseDesk\Requests\Ticket;
 
-use UseDesk\Requests\Tickets\sUseDeskRequestCreateTicket;
+use UseDesk\Requests\Tickets\RequestCreateTicket;
 
-class sUseDeskTokioCityRequestCreateTicket extends sUseDeskRequestCreateTicket
+class tokioCityRequestCreateTicket extends RequestCreateTicket
 {
     const FIELD_ID_RESTAURANT           = 18617;
 

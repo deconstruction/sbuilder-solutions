@@ -5,7 +5,7 @@ namespace UseDesk;
 /**
  * Экземпляр данного класса возвращается после выполнения запроса
  */
-class sUseDeskResponse
+class Response
 {
     /**
      * Отправленные данные
