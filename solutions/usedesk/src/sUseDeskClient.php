@@ -1,5 +1,17 @@
 <?php
 
+namespace UseDesk;
+
+use UseDesk\Requests\Clients\sUseDeskRequestClient;
+use UseDesk\Requests\Clients\sUseDeskRequestClients;
+use UseDesk\Requests\Clients\sUseDeskRequestCreateClient;
+use UseDesk\Requests\Clients\sUseDeskRequestUpdateClient;
+use UseDesk\Requests\Fields\sUseDeskRequestFields;
+use UseDesk\Requests\sUseDeskRequest;
+use UseDesk\Requests\Tickets\sUseDeskRequestCreateTicket;
+use UseDesk\Requests\Tickets\sUseDeskRequestTicket;
+use UseDesk\Requests\Tickets\sUserDeskRequestTickets;
+
 /**
  * Для старта работы с API клиентом необходимо создать экземпляр данного класса
  */
@@ -40,7 +52,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D1%82%D0%B8%D0%BA%D0%B5%D1%82%D0%BE%D0%B2
      *
-     * @return \sUserDeskRequestTickets
+     * @return sUserDeskRequestTickets
      */
     public function tickets()
     {
@@ -52,7 +64,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D1%82%D0%B8%D0%BA%D0%B5%D1%82
      *
-     * @return \sUseDeskRequestTicket
+     * @return sUseDeskRequestTicket
      */
     public function ticket($ticketId)
     {
@@ -66,7 +78,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%D1%82%D0%B8%D0%BA%D0%B5%D1%82
      *
-     * @return \sUseDeskRequest
+     * @return sUseDeskRequestCreateTicket
      */
     public function createTicket()
     {
@@ -78,7 +90,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/292028464#id-%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B-%D0%9F%D0%BE%D0%BB%D1%83%D1%87%D0%B8%D1%82%D1%8C%D1%81%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%BE%D0%B2
      *
-     * @return \sUseDeskRequestClients
+     * @return sUseDeskRequestClients
      */
     public function clients()
     {
@@ -90,7 +102,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/292028464#id-%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B-%D0%9E%D1%82%D0%B4%D0%B5%D0%BB%D1%8C%D0%BD%D1%8B%D0%B9%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82
      *
-     * @return \sUseDeskRequestClient
+     * @return sUseDeskRequestClient
      */
     public function client($id)
     {
@@ -104,7 +116,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/292028464#id-%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B-%D0%A1%D0%BE%D0%B7%D0%B4%D0%B0%D1%82%D1%8C%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return sUseDeskRequestCreateClient
      */
     public function createClient()
     {
@@ -116,7 +128,7 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/292028464#id-%D0%9A%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D1%8B-%D0%9E%D0%B1%D0%BD%D0%BE%D0%B2%D0%B8%D1%82%D1%8C%D0%BA%D0%BB%D0%B8%D0%B5%D0%BD%D1%82%D0%B0
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return sUseDeskRequestUpdateClient
      */
     public function updateClient($id)
     {
@@ -131,9 +143,9 @@ class sUseDeskClient
     }
 
     /**
-     * @param string $method
+     * @param $method
      *
-     * @return \sUseDeskRequest
+     * @return sUseDeskRequest
      */
     public function method($method)
     {

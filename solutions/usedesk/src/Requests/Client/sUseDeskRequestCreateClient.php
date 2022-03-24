@@ -1,5 +1,9 @@
 <?php
 
+namespace UseDesk\Requests\Clients;
+
+use UseDesk\Requests\sUseDeskRequest;
+
 /**
  * Метод создает нового клиента
  */
@@ -10,7 +14,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setName($value)
     {
@@ -22,7 +26,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setEmails($value)
     {
@@ -40,7 +44,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setMessengers($value)
     {
@@ -52,7 +56,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setNote($value)
     {
@@ -64,7 +68,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setPhone($value)
     {
@@ -76,7 +80,7 @@ class sUseDeskRequestCreateClient extends sUseDeskRequest
      *
      * @param $value
      *
-     * @return \sUseDeskRequestCreateClient
+     * @return self
      */
     public function setMergeId($value)
     {

@@ -1,674 +1,699 @@
 Search.appendIndex(
     [
                 {
-            "fqsen": "\\sUseDeskRequestClients",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients",
             "name": "sUseDeskRequestClients",
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0442\u0438\u043A\u0435\u0442\u044B,\u0020\u0443\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u044F\u044E\u0449\u0438\u0445\u0020\u0437\u0430\u0434\u0430\u043D\u043D\u044B\u043C\u0020\u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0020\u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432.",
-            "url": "classes/sUseDeskRequestClients.html"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetCreatedAfter\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetCreatedAfter\u0028\u0029",
             "name": "setCreatedAfter",
             "summary": "\u0412\u0020\u0432\u044B\u0434\u0430\u0447\u0443\u0020\u043F\u043E\u043F\u0430\u0434\u0443\u0442\u0020\u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438,\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0435\u0020\u043F\u043E\u0441\u043B\u0435\u0020\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439\u0020\u0434\u0430\u0442\u044B\u0020\u0028\u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0029\n\u041F\u0440\u0438\u043C\u0435\u0440\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F\u003A\n2022\u002D01\u002D01\u002000\u003A00",
-            "url": "classes/sUseDeskRequestClients.html#method_setCreatedAfter"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setCreatedAfter"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetCreatedBefore\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetCreatedBefore\u0028\u0029",
             "name": "setCreatedBefore",
             "summary": "\u0412\u0020\u0432\u044B\u0434\u0430\u0447\u0443\u0020\u043F\u043E\u043F\u0430\u0434\u0443\u0442\u0020\u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438,\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0435\u0020\u0434\u043E\u0020\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439\u0020\u0434\u0430\u0442\u044B\u0020\u0028\u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0029\n\u041F\u0440\u0438\u043C\u0435\u0440\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F\u003A\n2022\u002D12\u002D31\u002023\u003A59",
-            "url": "classes/sUseDeskRequestClients.html#method_setCreatedBefore"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setCreatedBefore"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetOffset\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetOffset\u0028\u0029",
             "name": "setOffset",
             "summary": "",
-            "url": "classes/sUseDeskRequestClients.html#method_setOffset"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setOffset"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetQuery\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetQuery\u0028\u0029",
             "name": "setQuery",
             "summary": "",
-            "url": "classes/sUseDeskRequestClients.html#method_setQuery"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setQuery"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetSearchType\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetSearchType\u0028\u0029",
             "name": "setSearchType",
             "summary": "",
-            "url": "classes/sUseDeskRequestClients.html#method_setSearchType"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setSearchType"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetSearchTypePartialMatch\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetSearchTypePartialMatch\u0028\u0029",
             "name": "setSearchTypePartialMatch",
             "summary": "",
-            "url": "classes/sUseDeskRequestClients.html#method_setSearchTypePartialMatch"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setSearchTypePartialMatch"
         },                {
-            "fqsen": "\\sUseDeskRequestClients\u003A\u003AsetSearchTypeFullMatch\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClients\u003A\u003AsetSearchTypeFullMatch\u0028\u0029",
             "name": "setSearchTypeFullMatch",
             "summary": "",
-            "url": "classes/sUseDeskRequestClients.html#method_setSearchTypeFullMatch"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClients.html#method_setSearchTypeFullMatch"
         },                {
-            "fqsen": "\\sUseDeskRequest",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest",
             "name": "sUseDeskRequest",
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u0434\u043B\u044F\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u0438\u044F\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u0430\u0020API",
-            "url": "classes/sUseDeskRequest.html"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method___construct"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method___construct"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003AsetBody\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003AsetBody\u0028\u0029",
             "name": "setBody",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_setBody"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_setBody"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003AgetFromBody\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003AgetFromBody\u0028\u0029",
             "name": "getFromBody",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_getFromBody"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_getFromBody"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003AcheckValue\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003AcheckValue\u0028\u0029",
             "name": "checkValue",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_checkValue"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_checkValue"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003Apush\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003Apush\u0028\u0029",
             "name": "push",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_push"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_push"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003AgetBody\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003AgetBody\u0028\u0029",
             "name": "getBody",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_getBody"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_getBody"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003ApreparePush\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003ApreparePush\u0028\u0029",
             "name": "preparePush",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#method_preparePush"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#method_preparePush"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003A\u0024client",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#property_client"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#property_client"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003A\u0024method",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003A\u0024method",
             "name": "method",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#property_method"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#property_method"
         },                {
-            "fqsen": "\\sUseDeskRequest\u003A\u003A\u0024body",
+            "fqsen": "\\UseDesk\\Requests\\sUseDeskRequest\u003A\u003A\u0024body",
             "name": "body",
             "summary": "",
-            "url": "classes/sUseDeskRequest.html#property_body"
+            "url": "classes/UseDesk-Requests-sUseDeskRequest.html#property_body"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket",
             "name": "sUseDeskRequestCreateTicket",
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u0441\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u0442\u0438\u043A\u0435\u0442\u0020\u0434\u043B\u044F\u0020API\u0020\u043A\u0430\u043D\u0430\u043B\u0430.",
-            "url": "classes/sUseDeskRequestCreateTicket.html"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003ApreparePush\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003ApreparePush\u0028\u0029",
             "name": "preparePush",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_preparePush"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_preparePush"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetSubject\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetSubject\u0028\u0029",
             "name": "setSubject",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setSubject"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setSubject"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetMessage\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetMessage\u0028\u0029",
             "name": "setMessage",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setMessage"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setMessage"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientName\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientName\u0028\u0029",
             "name": "setClientName",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientName"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientName"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientEmail\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientEmail\u0028\u0029",
             "name": "setClientEmail",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientEmail"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientEmail"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientPhone\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientPhone\u0028\u0029",
             "name": "setClientPhone",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientPhone"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientPhone"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientId\u0028\u0029",
             "name": "setClientId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCountry\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCountry\u0028\u0029",
             "name": "setClientCountry",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCountry"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientCountry"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCity\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCity\u0028\u0029",
             "name": "setClientCity",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCity"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientCity"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientAddress\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetClientAddress\u0028\u0029",
             "name": "setClientAddress",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientAddress"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setClientAddress"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetCompanyName\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetCompanyName\u0028\u0029",
             "name": "setCompanyName",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setCompanyName"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setCompanyName"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AcreatePrivateComment\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AcreatePrivateComment\u0028\u0029",
             "name": "createPrivateComment",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_createPrivateComment"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_createPrivateComment"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetAdditionalId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetAdditionalId\u0028\u0029",
             "name": "setAdditionalId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setAdditionalId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setAdditionalId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetType\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetType\u0028\u0029",
             "name": "setType",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setType"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setType"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeQuestion\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeQuestion\u0028\u0029",
             "name": "setTypeQuestion",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTypeQuestion"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTypeQuestion"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeTask\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeTask\u0028\u0029",
             "name": "setTypeTask",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTypeTask"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTypeTask"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeProblem\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeProblem\u0028\u0029",
             "name": "setTypeProblem",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTypeProblem"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTypeProblem"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeIncident\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTypeIncident\u0028\u0029",
             "name": "setTypeIncident",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTypeIncident"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTypeIncident"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPriority\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPriority\u0028\u0029",
             "name": "setPriority",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPriority"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPriority"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityLow\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityLow\u0028\u0029",
             "name": "setPriorityLow",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPriorityLow"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPriorityLow"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityMedium\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityMedium\u0028\u0029",
             "name": "setPriorityMedium",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPriorityMedium"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPriorityMedium"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityUrgent\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityUrgent\u0028\u0029",
             "name": "setPriorityUrgent",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPriorityUrgent"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPriorityUrgent"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityExtreme\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPriorityExtreme\u0028\u0029",
             "name": "setPriorityExtreme",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPriorityExtreme"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPriorityExtreme"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetStatus\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetStatus\u0028\u0029",
             "name": "setStatus",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setStatus"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setStatus"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTags\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTags\u0028\u0029",
             "name": "setTags",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTags"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTags"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetAssigneeId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetAssigneeId\u0028\u0029",
             "name": "setAssigneeId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setAssigneeId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setAssigneeId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetGroupId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetGroupId\u0028\u0029",
             "name": "setGroupId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setGroupId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setGroupId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFieldId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFieldId\u0028\u0029",
             "name": "setFieldId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFieldId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFieldId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFieldValue\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFieldValue\u0028\u0029",
             "name": "setFieldValue",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFieldValue"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFieldValue"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AaddField\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AaddField\u0028\u0029",
             "name": "addField",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_addField"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_addField"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetChannelId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetChannelId\u0028\u0029",
             "name": "setChannelId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setChannelId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setChannelId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFiles\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFiles\u0028\u0029",
             "name": "setFiles",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFiles"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFiles"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFrom\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFrom\u0028\u0029",
             "name": "setFrom",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFrom"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFrom"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFromUser\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFromUser\u0028\u0029",
             "name": "setFromUser",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFromUser"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFromUser"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFromClient\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFromClient\u0028\u0029",
             "name": "setFromClient",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFromClient"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFromClient"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFromTrigger\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetFromTrigger\u0028\u0029",
             "name": "setFromTrigger",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setFromTrigger"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setFromTrigger"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetUserId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetUserId\u0028\u0029",
             "name": "setUserId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setUserId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setUserId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetTriggerId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetTriggerId\u0028\u0029",
             "name": "setTriggerId",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setTriggerId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setTriggerId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetNewAddress\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetNewAddress\u0028\u0029",
             "name": "setNewAddress",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setNewAddress"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setNewAddress"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneType\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneType\u0028\u0029",
             "name": "setPhoneType",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneType"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneType"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeHome\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeHome\u0028\u0029",
             "name": "setPhoneTypeHome",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneTypeHome"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneTypeHome"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeMobile\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeMobile\u0028\u0029",
             "name": "setPhoneTypeMobile",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneTypeMobile"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneTypeMobile"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeStationary\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeStationary\u0028\u0029",
             "name": "setPhoneTypeStationary",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneTypeStationary"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneTypeStationary"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeFax\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeFax\u0028\u0029",
             "name": "setPhoneTypeFax",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneTypeFax"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneTypeFax"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeOther\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AsetPhoneTypeOther\u0028\u0029",
             "name": "setPhoneTypeOther",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setPhoneTypeOther"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_setPhoneTypeOther"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AaddFile\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003AaddFile\u0028\u0029",
             "name": "addFile",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_addFile"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#method_addFile"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003A\u0024fields",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestCreateTicket\u003A\u003A\u0024fields",
             "name": "fields",
             "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#property_fields"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestCreateTicket.html#property_fields"
         },                {
-            "fqsen": "\\sUseDeskRequestTicket",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestTicket",
             "name": "sUseDeskRequestTicket",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0442\u0438\u043A\u0435\u0442\u0020\u043F\u043E\u002D\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u043C\u0443\u0020id.\u0020\u041F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u0442\u0020\u043E\u0434\u0438\u043D\u0020id\u0020\u0442\u0438\u043A\u0435\u0442\u0430.",
-            "url": "classes/sUseDeskRequestTicket.html"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestTicket.html"
         },                {
-            "fqsen": "\\sUseDeskRequestTicket\u003A\u003AsetId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestTicket\u003A\u003AsetId\u0028\u0029",
             "name": "setId",
             "summary": "",
-            "url": "classes/sUseDeskRequestTicket.html#method_setId"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestTicket.html#method_setId"
         },                {
-            "fqsen": "\\sUseDeskRequestTicket\u003A\u003AsetProperties\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUseDeskRequestTicket\u003A\u003AsetProperties\u0028\u0029",
             "name": "setProperties",
             "summary": "",
-            "url": "classes/sUseDeskRequestTicket.html#method_setProperties"
+            "url": "classes/UseDesk-Requests-Tickets-sUseDeskRequestTicket.html#method_setProperties"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets",
             "name": "sUserDeskRequestTickets",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0442\u0438\u043A\u0435\u0442\u044B,\u0020\u0443\u0434\u043E\u0432\u043B\u0435\u0442\u0432\u043E\u0440\u044F\u044E\u0449\u0438\u0445\u0020\u0437\u0430\u0434\u0430\u043D\u043D\u044B\u043C\u0020\u0443\u0441\u043B\u043E\u0432\u0438\u044F\u043C\u0020\u0444\u0438\u043B\u044C\u0442\u0440\u043E\u0432.",
-            "url": "classes/sUserDeskRequestTickets.html"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetChannel\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetChannel\u0028\u0029",
             "name": "setChannel",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setChannel"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setChannel"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetGroup\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetGroup\u0028\u0029",
             "name": "setGroup",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setGroup"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setGroup"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetStatus\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetStatus\u0028\u0029",
             "name": "setStatus",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setStatus"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setStatus"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetType\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetType\u0028\u0029",
             "name": "setType",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setType"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setType"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetPriority\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetPriority\u0028\u0029",
             "name": "setPriority",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setPriority"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setPriority"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetAccessibleForAgentId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetAccessibleForAgentId\u0028\u0029",
             "name": "setAccessibleForAgentId",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setAccessibleForAgentId"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setAccessibleForAgentId"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetOffset\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetOffset\u0028\u0029",
             "name": "setOffset",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setOffset"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setOffset"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetTag\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetTag\u0028\u0029",
             "name": "setTag",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setTag"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setTag"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetCreatedAfter\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetCreatedAfter\u0028\u0029",
             "name": "setCreatedAfter",
             "summary": "\u0412\u0020\u0432\u044B\u0434\u0430\u0447\u0443\u0020\u043F\u043E\u043F\u0430\u0434\u0443\u0442\u0020\u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438,\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0435\u0020\u043F\u043E\u0441\u043B\u0435\u0020\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439\u0020\u0434\u0430\u0442\u044B\u0020\u0028\u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0029\n\u041F\u0440\u0438\u043C\u0435\u0440\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F\u003A\n2022\u002D01\u002D01\u002000\u003A00",
-            "url": "classes/sUserDeskRequestTickets.html#method_setCreatedAfter"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setCreatedAfter"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetCreatedBefore\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetCreatedBefore\u0028\u0029",
             "name": "setCreatedBefore",
             "summary": "\u0412\u0020\u0432\u044B\u0434\u0430\u0447\u0443\u0020\u043F\u043E\u043F\u0430\u0434\u0443\u0442\u0020\u0441\u0443\u0449\u043D\u043E\u0441\u0442\u0438,\u0020\u0441\u043E\u0437\u0434\u0430\u043D\u043D\u044B\u0435\u0020\u0434\u043E\u0020\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u0439\u0020\u0434\u0430\u0442\u044B\u0020\u0028\u0432\u043A\u043B\u044E\u0447\u0438\u0442\u0435\u043B\u044C\u043D\u043E\u0029\n\u041F\u0440\u0438\u043C\u0435\u0440\u0020\u0438\u0441\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u043D\u0438\u044F\u003A\n2022\u002D12\u002D31\u002023\u003A59",
-            "url": "classes/sUserDeskRequestTickets.html#method_setCreatedBefore"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setCreatedBefore"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetUpdatedAfter\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetUpdatedAfter\u0028\u0029",
             "name": "setUpdatedAfter",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setUpdatedAfter"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setUpdatedAfter"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetUpdatedBefore\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetUpdatedBefore\u0028\u0029",
             "name": "setUpdatedBefore",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setUpdatedBefore"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setUpdatedBefore"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetQuery\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetQuery\u0028\u0029",
             "name": "setQuery",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setQuery"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setQuery"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetClientId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetClientId\u0028\u0029",
             "name": "setClientId",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setClientId"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setClientId"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetFields\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetFields\u0028\u0029",
             "name": "setFields",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setFields"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setFields"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetSort\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetSort\u0028\u0029",
             "name": "setSort",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setSort"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setSort"
         },                {
-            "fqsen": "\\sUserDeskRequestTickets\u003A\u003AsetOrder\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Tickets\\sUserDeskRequestTickets\u003A\u003AsetOrder\u0028\u0029",
             "name": "setOrder",
             "summary": "",
-            "url": "classes/sUserDeskRequestTickets.html#method_setOrder"
+            "url": "classes/UseDesk-Requests-Tickets-sUserDeskRequestTickets.html#method_setOrder"
         },                {
-            "fqsen": "\\sUseDeskClient",
+            "fqsen": "\\UseDesk\\sUseDeskClient",
             "name": "sUseDeskClient",
             "summary": "\u0414\u043B\u044F\u0020\u0441\u0442\u0430\u0440\u0442\u0430\u0020\u0440\u0430\u0431\u043E\u0442\u044B\u0020\u0441\u0020API\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u043E\u043C\u0020\u043D\u0435\u043E\u0431\u0445\u043E\u0434\u0438\u043C\u043E\u0020\u0441\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u044D\u043A\u0437\u0435\u043C\u043F\u043B\u044F\u0440\u0020\u0434\u0430\u043D\u043D\u043E\u0433\u043E\u0020\u043A\u043B\u0430\u0441\u0441\u0430",
-            "url": "classes/sUseDeskClient.html"
+            "url": "classes/UseDesk-sUseDeskClient.html"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Atickets\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Atickets\u0028\u0029",
             "name": "tickets",
             "summary": "\u0421\u043F\u0438\u0441\u043E\u043A\u0020\u0442\u0438\u043A\u0435\u0442\u043E\u0432",
-            "url": "classes/sUseDeskClient.html#method_tickets"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_tickets"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Aticket\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Aticket\u0028\u0029",
             "name": "ticket",
             "summary": "\u041E\u0442\u0434\u0435\u043B\u044C\u043D\u044B\u0439\u0020\u0442\u0438\u043A\u0435\u0442",
-            "url": "classes/sUseDeskClient.html#method_ticket"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_ticket"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AcreateTicket\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AcreateTicket\u0028\u0029",
             "name": "createTicket",
             "summary": "\u0421\u043E\u0437\u0434\u0430\u0442\u044C\u0020\u0442\u0438\u043A\u0435\u0442",
-            "url": "classes/sUseDeskClient.html#method_createTicket"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_createTicket"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Aclients\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Aclients\u0028\u0029",
             "name": "clients",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0441\u043F\u0438\u0441\u043E\u043A\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u043E\u0432",
-            "url": "classes/sUseDeskClient.html#method_clients"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_clients"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Aclient\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Aclient\u0028\u0029",
             "name": "client",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#method_client"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_client"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AcreateClient\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AcreateClient\u0028\u0029",
             "name": "createClient",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0441\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u043D\u043E\u0432\u043E\u0433\u043E\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskClient.html#method_createClient"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_createClient"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AupdateClient\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AupdateClient\u0028\u0029",
             "name": "updateClient",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#method_updateClient"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_updateClient"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Afields\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Afields\u0028\u0029",
             "name": "fields",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#method_fields"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_fields"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003Amethod\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003Amethod\u0028\u0029",
             "name": "method",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#method_method"
+            "url": "classes/UseDesk-sUseDeskClient.html#method_method"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET_FIELDS",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_TICKET_FIELDS",
             "name": "METHOD_TICKET_FIELDS",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET_FIELDS"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_TICKET_FIELDS"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET_CREATE",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_TICKET_CREATE",
             "name": "METHOD_TICKET_CREATE",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET_CREATE"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_TICKET_CREATE"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_TICKET",
             "name": "METHOD_TICKET",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_TICKET"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKETS",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_TICKETS",
             "name": "METHOD_TICKETS",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKETS"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_TICKETS"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_CREATE",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_CREATE",
             "name": "METHOD_CLIENT_CREATE",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT_CREATE"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_CLIENT_CREATE"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_UPDATE",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_UPDATE",
             "name": "METHOD_CLIENT_UPDATE",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT_UPDATE"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_CLIENT_UPDATE"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_CLIENT",
             "name": "METHOD_CLIENT",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_CLIENT"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENTS",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003AMETHOD_CLIENTS",
             "name": "METHOD_CLIENTS",
             "summary": "",
-            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENTS"
+            "url": "classes/UseDesk-sUseDeskClient.html#constant_METHOD_CLIENTS"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003A\u0024token",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003A\u0024token",
             "name": "token",
             "summary": "API\u0020Token",
-            "url": "classes/sUseDeskClient.html#property_token"
+            "url": "classes/UseDesk-sUseDeskClient.html#property_token"
         },                {
-            "fqsen": "\\sUseDeskClient\u003A\u003A\u0024url",
+            "fqsen": "\\UseDesk\\sUseDeskClient\u003A\u003A\u0024url",
             "name": "url",
             "summary": "API\u0020URL",
-            "url": "classes/sUseDeskClient.html#property_url"
+            "url": "classes/UseDesk-sUseDeskClient.html#property_url"
         },                {
-            "fqsen": "\\sUseDeskResponse",
+            "fqsen": "\\UseDesk\\sUseDeskResponse",
             "name": "sUseDeskResponse",
             "summary": "\u042D\u043A\u0437\u0435\u043C\u043F\u043B\u044F\u0440\u0020\u0434\u0430\u043D\u043D\u043E\u0433\u043E\u0020\u043A\u043B\u0430\u0441\u0441\u0430\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0441\u044F\u0020\u043F\u043E\u0441\u043B\u0435\u0020\u0432\u044B\u043F\u043E\u043B\u043D\u0435\u043D\u0438\u044F\u0020\u0437\u0430\u043F\u0440\u043E\u0441\u0430",
-            "url": "classes/sUseDeskResponse.html"
+            "url": "classes/UseDesk-sUseDeskResponse.html"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003A__construct\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003A__construct\u0028\u0029",
             "name": "__construct",
             "summary": "",
-            "url": "classes/sUseDeskResponse.html#method___construct"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method___construct"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AhasErrors\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AhasErrors\u0028\u0029",
             "name": "hasErrors",
             "summary": "\u0415\u0441\u0442\u044C\u0020\u043B\u0438\u0020\u043E\u0448\u0438\u0431\u043A\u0438",
-            "url": "classes/sUseDeskResponse.html#method_hasErrors"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_hasErrors"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AgetErrorMessage\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AgetErrorMessage\u0028\u0029",
             "name": "getErrorMessage",
             "summary": "\u0421\u043E\u043E\u0431\u0449\u0435\u043D\u0438\u044F\u0020\u0441\u0020\u043E\u0448\u0438\u0431\u043A\u0430\u043C\u0438",
-            "url": "classes/sUseDeskResponse.html#method_getErrorMessage"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_getErrorMessage"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AgetBody\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AgetBody\u0028\u0029",
             "name": "getBody",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043D\u044B\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0435",
-            "url": "classes/sUseDeskResponse.html#method_getBody"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_getBody"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AgetResponse\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AgetResponse\u0028\u0029",
             "name": "getResponse",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043E\u0442\u0447\u0435\u0442",
-            "url": "classes/sUseDeskResponse.html#method_getResponse"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_getResponse"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003Aget\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003Aget\u0028\u0029",
             "name": "get",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u0437\u043D\u0430\u0447\u0435\u043D\u0438\u0435",
-            "url": "classes/sUseDeskResponse.html#method_get"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_get"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AisEmpty\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AisEmpty\u0028\u0029",
             "name": "isEmpty",
             "summary": "\u041F\u0443\u0441\u0442\u043E\u0439\u0020\u043B\u0438\u0020\u043E\u0442\u0432\u0435\u0442",
-            "url": "classes/sUseDeskResponse.html#method_isEmpty"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_isEmpty"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003AisNotEmpty\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003AisNotEmpty\u0028\u0029",
             "name": "isNotEmpty",
             "summary": "\u041D\u0435\u0020\u043F\u0443\u0441\u0442\u043E\u0439\u0020\u043B\u0438\u0020\u043E\u0442\u0432\u0435\u0442",
-            "url": "classes/sUseDeskResponse.html#method_isNotEmpty"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_isNotEmpty"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003Afirst\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003Afirst\u0028\u0029",
             "name": "first",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0438\u0442\u044C\u0020\u043F\u0435\u0440\u0432\u044B\u0439\u0020\u044D\u043B\u0435\u043C\u0435\u043D\u0442\u0020\u043E\u0442\u0432\u0435\u0442\u0430",
-            "url": "classes/sUseDeskResponse.html#method_first"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_first"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003Acount\u0028\u0029",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003Acount\u0028\u0029",
             "name": "count",
             "summary": "\u041A\u043E\u043B\u002D\u0432\u043E\u0020\u044D\u043B\u0435\u043C\u0435\u043D\u0442\u043E\u0432\u0020\u0432\u0020\u043E\u0442\u0432\u0435\u0442\u0435",
-            "url": "classes/sUseDeskResponse.html#method_count"
+            "url": "classes/UseDesk-sUseDeskResponse.html#method_count"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003A\u0024body",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003A\u0024body",
             "name": "body",
             "summary": "\u041E\u0442\u043F\u0440\u0430\u0432\u043B\u0435\u043D\u043D\u044B\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0435",
-            "url": "classes/sUseDeskResponse.html#property_body"
+            "url": "classes/UseDesk-sUseDeskResponse.html#property_body"
         },                {
-            "fqsen": "\\sUseDeskResponse\u003A\u003A\u0024response",
+            "fqsen": "\\UseDesk\\sUseDeskResponse\u003A\u003A\u0024response",
             "name": "response",
             "summary": "\u041F\u043E\u043B\u0443\u0447\u0435\u043D\u043D\u044B\u0435\u0020\u0434\u0430\u043D\u043D\u044B\u0435",
-            "url": "classes/sUseDeskResponse.html#property_response"
+            "url": "classes/UseDesk-sUseDeskResponse.html#property_response"
         },                {
-            "fqsen": "\\sUseDeskRequestClient",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClient",
             "name": "sUseDeskRequestClient",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0438\u043D\u0444\u043E\u0440\u043C\u0430\u0446\u0438\u044E\u0020\u043E\u0431\u0020\u0443\u043A\u0430\u0437\u0430\u043D\u043D\u043E\u043C\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0435\u0020\u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438.\u0020\u041F\u0440\u0438\u043D\u0438\u043C\u0430\u0435\u0442\u0020\u043E\u0434\u0438\u043D\u0020id\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskRequestClient.html"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClient.html"
         },                {
-            "fqsen": "\\sUseDeskRequestClient\u003A\u003AsetClientId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestClient\u003A\u003AsetClientId\u0028\u0029",
             "name": "setClientId",
             "summary": "",
-            "url": "classes/sUseDeskRequestClient.html#method_setClientId"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestClient.html#method_setClientId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient",
             "name": "sUseDeskRequestCreateClient",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0441\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u043D\u043E\u0432\u043E\u0433\u043E\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskRequestCreateClient.html"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetName\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetName\u0028\u0029",
             "name": "setName",
             "summary": "\u041D\u043E\u0432\u043E\u0435\u0020\u0438\u043C\u044F\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setName"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setName"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetEmails\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetEmails\u0028\u0029",
             "name": "setEmails",
             "summary": "\u041C\u0430\u0441\u0441\u0438\u0432\u0020\u0441\u0020\u043F\u043E\u0447\u0442\u043E\u0432\u044B\u043C\u0438\u0020\u0430\u0434\u0440\u0435\u0441\u0430\u043C\u0438",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setEmails"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setEmails"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetMessengers\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetMessengers\u0028\u0029",
             "name": "setMessengers",
             "summary": "\u041C\u0430\u0441\u0441\u0438\u0432\u0020\u0441\u0020\u0434\u0430\u043D\u043D\u044B\u043C\u0438\u0020\u043C\u0435\u0441\u0441\u0435\u043D\u0434\u0436\u0435\u0440\u043E\u0432",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setMessengers"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMessengers"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetNote\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetNote\u0028\u0029",
             "name": "setNote",
             "summary": "\u0422\u0435\u043A\u0441\u0442\u0020\u0437\u0430\u043C\u0435\u0442\u043A\u0438",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setNote"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setNote"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetPhone\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetPhone\u0028\u0029",
             "name": "setPhone",
             "summary": "\u0422\u0435\u043B\u0435\u0444\u043E\u043D\u0020\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044F",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setPhone"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setPhone"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateClient\u003A\u003AsetMergeId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestCreateClient\u003A\u003AsetMergeId\u0028\u0029",
             "name": "setMergeId",
             "summary": "\u0418\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430,\u0020\u0441\u0020\u043A\u043E\u0442\u043E\u0440\u044B\u043C\u0020\u0431\u0443\u0434\u0435\u0442\u0020\u043E\u0431\u044A\u0435\u0434\u0438\u043D\u0435\u043D\u0020\u043F\u043E\u043B\u044C\u0437\u043E\u0432\u0430\u0442\u0435\u043B\u044C\u0020\u0441\u0020\u0438\u0434\u0435\u043D\u0442\u0438\u0444\u0438\u043A\u0430\u0442\u043E\u0440\u043E\u043C\u0020client_id",
-            "url": "classes/sUseDeskRequestCreateClient.html#method_setMergeId"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestCreateClient.html#method_setMergeId"
         },                {
-            "fqsen": "\\sUseDeskRequestUpdateClient",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestUpdateClient",
             "name": "sUseDeskRequestUpdateClient",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0441\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u043D\u043E\u0432\u043E\u0433\u043E\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskRequestUpdateClient.html"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestUpdateClient.html"
         },                {
-            "fqsen": "\\sUseDeskRequestUpdateClient\u003A\u003AsetClientId\u0028\u0029",
+            "fqsen": "\\UseDesk\\Requests\\Clients\\sUseDeskRequestUpdateClient\u003A\u003AsetClientId\u0028\u0029",
             "name": "setClientId",
             "summary": "id\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
-            "url": "classes/sUseDeskRequestUpdateClient.html#method_setClientId"
+            "url": "classes/UseDesk-Requests-Clients-sUseDeskRequestUpdateClient.html#method_setClientId"
         },                {
-            "fqsen": "\\sUseDeskRequestFields",
+            "fqsen": "\\UseDesk\\Requests\\Fields\\sUseDeskRequestFields",
             "name": "sUseDeskRequestFields",
             "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0432\u0441\u0435\u0020\u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435\u0020\u043F\u043E\u043B\u044F\u0020\u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438",
-            "url": "classes/sUseDeskRequestFields.html"
+            "url": "classes/UseDesk-Requests-Fields-sUseDeskRequestFields.html"
         },                {
             "fqsen": "\\",
             "name": "\\",
             "summary": "",
             "url": "namespaces/default.html"
+        },                {
+            "fqsen": "\\UseDesk\\Requests\\Clients",
+            "name": "Clients",
+            "summary": "",
+            "url": "namespaces/usedesk-requests-clients.html"
+        },                {
+            "fqsen": "\\UseDesk\\Requests\\Fields",
+            "name": "Fields",
+            "summary": "",
+            "url": "namespaces/usedesk-requests-fields.html"
+        },                {
+            "fqsen": "\\UseDesk\\Requests",
+            "name": "Requests",
+            "summary": "",
+            "url": "namespaces/usedesk-requests.html"
+        },                {
+            "fqsen": "\\UseDesk\\Requests\\Tickets",
+            "name": "Tickets",
+            "summary": "",
+            "url": "namespaces/usedesk-requests-tickets.html"
+        },                {
+            "fqsen": "\\UseDesk",
+            "name": "UseDesk",
+            "summary": "",
+            "url": "namespaces/usedesk.html"
         }            ]
 );

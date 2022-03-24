@@ -1,5 +1,10 @@
 <?php
 
+namespace UseDesk\Requests\Tickets;
+
+use CURLFile;
+use UseDesk\Requests\sUseDeskRequest;
+
 /**
  * Класс создает тикет для API канала.
  *
@@ -316,7 +321,7 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
     }
 
     /**
-     * @param id $value
+     * @param int $value
      *
      * @return self
      */

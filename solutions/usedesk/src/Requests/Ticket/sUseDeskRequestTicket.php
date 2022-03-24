@@ -1,5 +1,9 @@
 <?php
 
+namespace UseDesk\Requests\Tickets;
+
+use UseDesk\Requests\sUseDeskRequest;
+
 /**
  * Метод возвращает тикет по-указанному id. Принимает один id тикета.
  *

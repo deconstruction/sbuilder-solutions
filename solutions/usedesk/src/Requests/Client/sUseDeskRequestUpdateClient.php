@@ -1,5 +1,9 @@
 <?php
 
+namespace UseDesk\Requests\Clients;
+
+use UseDesk\Requests\sUseDeskRequest;
+
 /**
  * Метод создает нового клиента
  */
@@ -10,7 +14,7 @@ class sUseDeskRequestUpdateClient extends sUseDeskRequestCreateClient
      *
      * @param int $id
      *
-     * @return \sUseDeskRequestUpdateClient
+     * @return self
      */
     public function setClientId($id)
     {

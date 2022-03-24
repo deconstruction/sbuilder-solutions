@@ -1,12 +1,18 @@
 <?php
 
+namespace UseDesk\Requests;
+
+use RuntimeException;
+use UseDesk\sUseDeskClient;
+use UseDesk\sUseDeskResponse;
+
 /**
  * Класс для создания запроса API
  */
 class sUseDeskRequest
 {
     /**
-     * @var \sUseDeskClient
+     * @var sUseDeskClient
      */
     protected $client;
 
@@ -21,7 +27,7 @@ class sUseDeskRequest
     protected $body = array();
 
     /**
-     * @param \sUseDeskClient $client
+     * @param sUseDeskClient $client
      * @param string          $method
      */
     public function __construct($client, $method)
@@ -59,19 +65,19 @@ class sUseDeskRequest
      * @param $values
      * @param $value
      *
-     * @throws \RuntimeException
+     * @throws RuntimeException
      *
      * @return void
      */
     protected function checkValue($values, $value)
     {
         if(!in_array($value, $values, true)) {
-            throw new \RuntimeException('Неверное значение для поля type. Возможные значения: ' . implode(', ', $values));
+            throw new RuntimeException('Неверное значение для поля type. Возможные значения: ' . implode(', ', $values));
         }
     }
 
     /**
-     * @return array|\sUseDeskResponse
+     * @return array|\UseDesk\sUseDeskResponse
      */
     public function push()
     {
