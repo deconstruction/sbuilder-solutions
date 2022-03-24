@@ -1,5 +1,9 @@
 <?php
 
+namespace UseDesk;
+
+use UseDesk\Requests\Ticket\sUseDeskTokioCityRequestCreateTicket;
+
 class UseDeskTokioCity
 {
     private $request;
@@ -11,7 +15,7 @@ class UseDeskTokioCity
     }
 
     /**
-     * @return \sUseDeskTokioCityRequestCreateTicket
+     * @return sUseDeskTokioCityRequestCreateTicket
      */
     public function getRequest()
     {

@@ -1,20 +1,24 @@
 <?php
 
+namespace UseDesk\Requests\Ticket;
+
+use UseDesk\Requests\Tickets\sUseDeskRequestCreateTicket;
+
 class sUseDeskTokioCityRequestCreateTicket extends sUseDeskRequestCreateTicket
 {
-    const FIELD_ID_RESTAURANT = 18617;
+    const FIELD_ID_RESTAURANT           = 18617;
 
-    const FIELD_ID_DATE_VISIT = 18617;
+    const FIELD_ID_DATE_VISIT           = 18617;
 
-    const FIELD_ID_ORDER_ID = 18613;
+    const FIELD_ID_ORDER_ID             = 18613;
 
-    const FIELD_ID_DIRECTION = 18622;
+    const FIELD_ID_DIRECTION            = 18622;
 
-    const FIELD_ID_ORDER_TYPE = 18637;
-    
-    const FIELD_ID_INITIATOR = 18638;
+    const FIELD_ID_ORDER_TYPE           = 18637;
 
-    const FIELD_ID_SOURCE_APPEAL = 18639;
+    const FIELD_ID_INITIATOR            = 18638;
+
+    const FIELD_ID_SOURCE_APPEAL        = 18639;
 
     const FIELD_ID_DISCOUNT_CARD_NUMBER = 18640;
 

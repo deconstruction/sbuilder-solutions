@@ -1,11 +1,15 @@
 <?php
 
+namespace UseDesk;
+
+use UseDesk\Requests\Ticket\sUseDeskTokioCityRequestCreateTicket;
+
 class sUseDeskTokioCityClient extends sUseDeskClient
 {
     /**
      * Создать тикет
      *
-     * @return \sUseDeskTokioCityRequestCreateTicket
+     * @return sUseDeskTokioCityRequestCreateTicket
      */
     public function createTicket()
     {
