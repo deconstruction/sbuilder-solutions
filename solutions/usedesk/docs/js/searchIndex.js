@@ -76,6 +76,11 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/sUseDeskRequest.html#method_getBody"
         },                {
+            "fqsen": "\\sUseDeskRequest\u003A\u003ApreparePush\u0028\u0029",
+            "name": "preparePush",
+            "summary": "",
+            "url": "classes/sUseDeskRequest.html#method_preparePush"
+        },                {
             "fqsen": "\\sUseDeskRequest\u003A\u003A\u0024client",
             "name": "client",
             "summary": "",
@@ -96,6 +101,11 @@ Search.appendIndex(
             "summary": "\u041A\u043B\u0430\u0441\u0441\u0020\u0441\u043E\u0437\u0434\u0430\u0435\u0442\u0020\u0442\u0438\u043A\u0435\u0442\u0020\u0434\u043B\u044F\u0020API\u0020\u043A\u0430\u043D\u0430\u043B\u0430.",
             "url": "classes/sUseDeskRequestCreateTicket.html"
         },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003ApreparePush\u0028\u0029",
+            "name": "preparePush",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_preparePush"
+        },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetSubject\u0028\u0029",
             "name": "setSubject",
             "summary": "",
@@ -106,15 +116,40 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setMessage"
         },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientName\u0028\u0029",
+            "name": "setClientName",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientName"
+        },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientEmail\u0028\u0029",
             "name": "setClientEmail",
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientEmail"
         },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientPhone\u0028\u0029",
+            "name": "setClientPhone",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientPhone"
+        },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientId\u0028\u0029",
             "name": "setClientId",
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientId"
+        },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCountry\u0028\u0029",
+            "name": "setClientCountry",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCountry"
+        },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCity\u0028\u0029",
+            "name": "setClientCity",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCity"
+        },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientAddress\u0028\u0029",
+            "name": "setClientAddress",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientAddress"
         },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetCompanyName\u0028\u0029",
             "name": "setCompanyName",
@@ -201,11 +236,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setGroupId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientPhone\u0028\u0029",
-            "name": "setClientPhone",
-            "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientPhone"
-        },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetFieldId\u0028\u0029",
             "name": "setFieldId",
             "summary": "",
@@ -215,6 +245,11 @@ Search.appendIndex(
             "name": "setFieldValue",
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setFieldValue"
+        },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AaddField\u0028\u0029",
+            "name": "addField",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#method_addField"
         },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetChannelId\u0028\u0029",
             "name": "setChannelId",
@@ -256,21 +291,6 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_setTriggerId"
         },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCountry\u0028\u0029",
-            "name": "setClientCountry",
-            "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCountry"
-        },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientCity\u0028\u0029",
-            "name": "setClientCity",
-            "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientCity"
-        },                {
-            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetClientAddress\u0028\u0029",
-            "name": "setClientAddress",
-            "summary": "",
-            "url": "classes/sUseDeskRequestCreateTicket.html#method_setClientAddress"
-        },                {
             "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003AsetNewAddress\u0028\u0029",
             "name": "setNewAddress",
             "summary": "",
@@ -310,6 +330,11 @@ Search.appendIndex(
             "name": "addFile",
             "summary": "",
             "url": "classes/sUseDeskRequestCreateTicket.html#method_addFile"
+        },                {
+            "fqsen": "\\sUseDeskRequestCreateTicket\u003A\u003A\u0024fields",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/sUseDeskRequestCreateTicket.html#property_fields"
         },                {
             "fqsen": "\\sUseDeskRequestTicket",
             "name": "sUseDeskRequestTicket",
@@ -456,10 +481,55 @@ Search.appendIndex(
             "summary": "",
             "url": "classes/sUseDeskClient.html#method_updateClient"
         },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003Afields\u0028\u0029",
+            "name": "fields",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#method_fields"
+        },                {
             "fqsen": "\\sUseDeskClient\u003A\u003Amethod\u0028\u0029",
             "name": "method",
             "summary": "",
             "url": "classes/sUseDeskClient.html#method_method"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET_FIELDS",
+            "name": "METHOD_TICKET_FIELDS",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET_FIELDS"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET_CREATE",
+            "name": "METHOD_TICKET_CREATE",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET_CREATE"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKET",
+            "name": "METHOD_TICKET",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKET"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_TICKETS",
+            "name": "METHOD_TICKETS",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_TICKETS"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_CREATE",
+            "name": "METHOD_CLIENT_CREATE",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT_CREATE"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT_UPDATE",
+            "name": "METHOD_CLIENT_UPDATE",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT_UPDATE"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENT",
+            "name": "METHOD_CLIENT",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENT"
+        },                {
+            "fqsen": "\\sUseDeskClient\u003A\u003AMETHOD_CLIENTS",
+            "name": "METHOD_CLIENTS",
+            "summary": "",
+            "url": "classes/sUseDeskClient.html#constant_METHOD_CLIENTS"
         },                {
             "fqsen": "\\sUseDeskClient\u003A\u003A\u0024token",
             "name": "token",
@@ -590,6 +660,11 @@ Search.appendIndex(
             "name": "setClientId",
             "summary": "id\u0020\u043A\u043B\u0438\u0435\u043D\u0442\u0430",
             "url": "classes/sUseDeskRequestUpdateClient.html#method_setClientId"
+        },                {
+            "fqsen": "\\sUseDeskRequestFields",
+            "name": "sUseDeskRequestFields",
+            "summary": "\u041C\u0435\u0442\u043E\u0434\u0020\u0432\u043E\u0437\u0432\u0440\u0430\u0449\u0430\u0435\u0442\u0020\u0432\u0441\u0435\u0020\u0434\u043E\u043F\u043E\u043B\u043D\u0438\u0442\u0435\u043B\u044C\u043D\u044B\u0435\u0020\u043F\u043E\u043B\u044F\u0020\u043A\u043E\u043C\u043F\u0430\u043D\u0438\u0438",
+            "url": "classes/sUseDeskRequestFields.html"
         },                {
             "fqsen": "\\",
             "name": "\\",

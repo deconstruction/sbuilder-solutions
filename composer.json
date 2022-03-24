@@ -12,7 +12,7 @@
     "roave/security-advisories": "dev-master"
   },
   "autoload": {
-    "classmap": ["solutions/usedesk/src"],
+    "classmap": ["solutions/usedesk/src", "solutions/usedesk/cases"],
     "files": ["helpers/dd.php", "helpers/data_get.php"]
   },
   "autoload-dev": {

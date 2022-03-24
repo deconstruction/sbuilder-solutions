@@ -8,6 +8,17 @@
 class sUseDeskRequestCreateTicket extends sUseDeskRequest
 {
     /**
+     * @var array
+     */
+    protected $fields = array();
+
+    protected function preparePush()
+    {
+        $this->setFieldId(implode(';', array_keys($this->fields)));
+        $this->setFieldValue(implode(';', $this->fields));
+    }
+
+    /**
      * @param string $value
      *
      * @return self
@@ -30,11 +41,33 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
     /**
      * @param string $value
      *
+     * @return $this
+     */
+    public function setClientName($value)
+    {
+        $this->setBody('client_name', $value);
+
+        return $this;
+    }
+
+    /**
+     * @param string $value
+     *
      * @return self
      */
     public function setClientEmail($value)
     {
-        return $this->setBody('client_mail', $value);
+        return $this->setBody('client_email', $value);
+    }
+
+    /**
+     * @param int $value
+     *
+     * @return self
+     */
+    public function setClientPhone($value)
+    {
+        return $this->setBody('client_phone', $value);
     }
 
     /**
@@ -45,6 +78,36 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
     public function setClientId($value = 'new_client')
     {
         return $this->setBody('client_id', $value);
+    }
+
+    /**
+     * @param string $value
+     *
+     * @return self
+     */
+    public function setClientCountry($value)
+    {
+        return $this->setBody('client_country', $value);
+    }
+
+    /**
+     * @param string $value
+     *
+     * @return self
+     */
+    public function setClientCity($value)
+    {
+        return $this->setBody('client_city', $value);
+    }
+
+    /**
+     * @param string $value
+     *
+     * @return self
+     */
+    public function setClientAddress($value)
+    {
+        return $this->setBody('client_address', $value);
     }
 
     /**
@@ -220,33 +283,36 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
     }
 
     /**
-     * @param int $value
+     * @param string $value
      *
-     * @return self
+     * @return void
      */
-    public function setClientPhone($value)
+    private function setFieldId($value)
     {
-        return $this->setBody('client_phone', $value);
+        $this->setBody('field_id', $value);
     }
 
     /**
      * @param string $value
      *
-     * @return self
+     * @return void
      */
-    public function setFieldId($value)
+    private function setFieldValue($value)
     {
-        return $this->setBody('field_id', $value);
+        $this->setBody('field_value', $value);
     }
 
     /**
-     * @param string $value
+     * @param int    $key
+     * @param scalar $value
      *
      * @return self
      */
-    public function setFieldValue($value)
+    public function addField($key, $value)
     {
-        return $this->setBody('field_value', $value);
+        $this->fields[$key] = $value;
+
+        return $this;
     }
 
     /**
@@ -271,7 +337,7 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
 
     /**
      * @param string $value
-     * @param int $id
+     * @param int    $id
      *
      * @return self
      */
@@ -332,36 +398,6 @@ class sUseDeskRequestCreateTicket extends sUseDeskRequest
     public function setTriggerId($value)
     {
         return $this->setBody('trigger_id', $value);
-    }
-
-    /**
-     * @param string $value
-     *
-     * @return self
-     */
-    public function setClientCountry($value)
-    {
-        return $this->setBody('client_country', $value);
-    }
-
-    /**
-     * @param string $value
-     *
-     * @return self
-     */
-    public function setClientCity($value)
-    {
-        return $this->setBody('client_city', $value);
-    }
-
-    /**
-     * @param string $value
-     *
-     * @return self
-     */
-    public function setClientAddress($value)
-    {
-        return $this->setBody('client_address', $value);
     }
 
     /**

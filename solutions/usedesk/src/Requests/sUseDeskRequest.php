@@ -75,6 +75,8 @@ class sUseDeskRequest
      */
     public function push()
     {
+        $this->preparePush();
+
         $ch = curl_init($this->client->url . $this->method);
 
         $curlOptions = array(
@@ -113,5 +115,12 @@ class sUseDeskRequest
     public function getBody()
     {
         return $this->body;
+    }
+
+    /**
+     * @return void
+     */
+    protected function preparePush()
+    {
     }
 }

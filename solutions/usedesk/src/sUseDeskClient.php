@@ -5,6 +5,22 @@
  */
 class sUseDeskClient
 {
+    const METHOD_TICKET_FIELDS = 'ticket/fields';
+
+    const METHOD_TICKET_CREATE = 'create/ticket';
+
+    const METHOD_TICKET = 'ticket';
+
+    const METHOD_TICKETS = 'tickets';
+
+    const METHOD_CLIENT_CREATE = 'create/client';
+
+    const METHOD_CLIENT_UPDATE = 'update/client';
+
+    const METHOD_CLIENT = 'client';
+
+    const METHOD_CLIENTS = 'clients';
+
     /**
      * API Token
      *
@@ -28,7 +44,7 @@ class sUseDeskClient
      */
     public function tickets()
     {
-        return new sUserDeskRequestTickets($this, 'tickets');
+        return new sUserDeskRequestTickets($this, self::METHOD_TICKETS);
     }
 
     /**
@@ -40,7 +56,7 @@ class sUseDeskClient
      */
     public function ticket($ticketId)
     {
-        $ticket = new sUseDeskRequestTicket($this, 'ticket');
+        $ticket = new sUseDeskRequestTicket($this, self::METHOD_TICKET);
 
         return $ticket->setId($ticketId);
     }
@@ -54,7 +70,7 @@ class sUseDeskClient
      */
     public function createTicket()
     {
-        return new sUseDeskRequestCreateTicket($this, 'create/ticket');
+        return new sUseDeskRequestCreateTicket($this, self::METHOD_TICKET_CREATE);
     }
 
     /**
@@ -66,7 +82,7 @@ class sUseDeskClient
      */
     public function clients()
     {
-        return new sUseDeskRequestClients($this, 'clients');
+        return new sUseDeskRequestClients($this, self::METHOD_CLIENTS);
     }
 
     /**
@@ -78,7 +94,7 @@ class sUseDeskClient
      */
     public function client($id)
     {
-        $request = new sUseDeskRequestClient($this, 'client');;
+        $request = new sUseDeskRequestClient($this, self::METHOD_CLIENT);
 
         return $request->setClientId($id);
     }
@@ -92,7 +108,7 @@ class sUseDeskClient
      */
     public function createClient()
     {
-        return new sUseDeskRequestCreateClient($this, 'create/client');
+        return new sUseDeskRequestCreateClient($this, self::METHOD_CLIENT_CREATE);
     }
 
     /**
@@ -104,9 +120,14 @@ class sUseDeskClient
      */
     public function updateClient($id)
     {
-        $request = new sUseDeskRequestUpdateClient($this, 'update/client');
+        $request = new sUseDeskRequestUpdateClient($this, self::METHOD_CLIENT_UPDATE);
 
         return $request->setClientId($id);
+    }
+
+    public function fields()
+    {
+        return new sUseDeskRequestFields($this, self::METHOD_TICKET_FIELDS);
     }
 
     /**
