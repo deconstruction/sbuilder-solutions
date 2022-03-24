@@ -15,7 +15,7 @@ const recaptchaClientKey = '***';
 
 ## Установка
 
-1. Для начала закачиваем исходники в CMS. [sRecaptcha.php](src/Recaptcha/Recaptcha.php) необходимо загрузить в папку /cms/extensions/. JS в любую папку.
+1. Для начала закачиваем исходники в CMS. [sRecaptcha.php](src/extensions/Recaptcha/Recaptcha.php) необходимо загрузить в папку /cms/extensions/. JS в любую папку.
 
 2. На страницу, где форма, необходимо установить скрипт.
 ```html
