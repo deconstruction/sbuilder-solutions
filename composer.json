@@ -6,7 +6,7 @@
     "solutions"
   ],
   "require": {
-    "php": "^5.4"
+    "php": "^5.3"
   },
   "require-dev": {
     "roave/security-advisories": "dev-master"
@@ -22,7 +22,7 @@
   },
   "config": {
     "platform": {
-      "php": "5.4"
+      "php": "5.3.3"
     },
     "optimize-autoloader": true,
     "preferred-install": "dist",
