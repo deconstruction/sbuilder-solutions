@@ -10,7 +10,7 @@ use UseDesk\Requests\Fields\sUseDeskRequestFields;
 use UseDesk\Requests\sUseDeskRequest;
 use UseDesk\Requests\Tickets\sUseDeskRequestCreateTicket;
 use UseDesk\Requests\Tickets\sUseDeskRequestTicket;
-use UseDesk\Requests\Tickets\sUserDeskRequestTickets;
+use UseDesk\Requests\Tickets\sUseDeskRequestTickets;
 
 /**
  * Для старта работы с API клиентом необходимо создать экземпляр данного класса
@@ -52,11 +52,11 @@ class sUseDeskClient
      *
      * @link https://usedeskkb.atlassian.net/wiki/spaces/API/pages/219611150#id-%D0%A2%D0%B8%D0%BA%D0%B5%D1%82%D1%8B-%D0%A1%D0%BF%D0%B8%D1%81%D0%BE%D0%BA%D1%82%D0%B8%D0%BA%D0%B5%D1%82%D0%BE%D0%B2
      *
-     * @return sUserDeskRequestTickets
+     * @return sUseDeskRequestTickets
      */
     public function tickets()
     {
-        return new sUserDeskRequestTickets($this, self::METHOD_TICKETS);
+        return new sUseDeskRequestTickets($this, self::METHOD_TICKETS);
     }
 
     /**
