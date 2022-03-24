@@ -19,7 +19,7 @@ const recaptchaClientKey = '***';
 
 2. На страницу, где форма, необходимо установить скрипт.
 ```html
-<scrpt src="/js/recaptcha.js"></scrpt> 
+<scrpt src="/assets/js/recaptcha.js"></scrpt> 
 ```
 
 3. На необходимую форму необходимо повесить тег: **data-recaptcha**
