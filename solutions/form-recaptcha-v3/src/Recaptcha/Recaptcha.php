@@ -1,6 +1,8 @@
 <?php
 
-class sRecaptcha
+namespace Recaptcha;
+
+class Recaptcha
 {
 	const URL = 'https://www.google.com/recaptcha/api/siteverify';
 
@@ -36,12 +38,8 @@ class sRecaptcha
 	{
 		$recaptcha = $this->request($token);
 
-		if($recaptcha['score'] <= $score) {
-			return true;        
-		}
-
-		return false;
-	}
+        return $recaptcha['score'] <= $score;
+    }
 
 	private function getIp()
 	{

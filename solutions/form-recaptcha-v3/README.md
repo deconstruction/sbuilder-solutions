@@ -7,7 +7,7 @@
 ## Ключи
 ![Google Recaptcha Keys](images/keys.jpg)
 
-Ключ сайта необходим для скрипта JS. В [исходнике](src/recaptcha.js) замените значение переменной *recaptchaClientKey*.
+Ключ сайта необходим для скрипта JS. В [исходнике](src/assets/js/recaptcha.js) замените значение переменной *recaptchaClientKey*.
 
 ```js
 const recaptchaClientKey = '***';
@@ -15,7 +15,7 @@ const recaptchaClientKey = '***';
 
 ## Установка
 
-1. Для начала закачиваем исходники в CMS. [sRecaptcha.php](src/sRecaptcha.php) необходимо загрузить в папку /cms/extensions/. JS в любую папку.
+1. Для начала закачиваем исходники в CMS. [sRecaptcha.php](src/Recaptcha/Recaptcha.php) необходимо загрузить в папку /cms/extensions/. JS в любую папку.
 
 2. На страницу, где форма, необходимо установить скрипт.
 ```html
@@ -40,7 +40,7 @@ const recaptchaClientKey = '***';
 
 ***secret key*** - подствьте ключ из поля *секретный ключ*.
 ```php
-$recaptcha = new sRecaptcha('secret key');
+$recaptcha = new \Recaptcha\Recaptcha('secret key');
 
 $error = $recaptcha->check(0.5, $_POST['recaptcha_token']);
 
@@ -48,7 +48,7 @@ $f_value = $recaptcha->response;
 $f_value .= PHP_EOL . PHP_EOL;
 $f_value .= print_r($_POST, 1); 
 ```
-![Новое поле для рекаптчи](images/field-in-module-2.jpg)
+![Новое поле для Recaptcha](images/field-in-module-2.jpg)
 
 
 
