@@ -1,9 +1,21 @@
 <?php
 
-class sYadroCRM
+namespace YadroCRM;
+
+use Exception;
+
+class YadroCRM
 {
+    /**
+     * Необходимо подставить свой ключ
+     */
     const KEY = '7e64081a';
 
+    /**
+     * Отправляет данные POST на сервер yadroCRM
+     *
+     * @return false|string
+     */
     public static function push()
     {
         $introvertUrl = 'https://api.yadrocrm.ru/integration/site?key=' . self::KEY;
@@ -36,6 +48,13 @@ class sYadroCRM
         return $response;
     }
 
+    /**
+     * Логирование ответа сервера
+     *
+     * @param string $response
+     *
+     * @return void
+     */
     private static function log($response)
     {
         if (function_exists('sb_add_system_message')) {
