@@ -24,7 +24,7 @@ class Request
     /**
      * @var array
      */
-    protected $body = [];
+    protected $body = array();
 
     /**
      * @param Client $client
@@ -82,7 +82,7 @@ class Request
     /**
      * Отправляем запрос
      *
-     * @return array|Response
+     * @return Response
      */
     public function push()
     {
@@ -90,7 +90,7 @@ class Request
 
         $ch = curl_init($this->client->url . $this->method);
 
-        $curlOptions = [
+        $curlOptions = array(
             CURLOPT_USERAGENT      => 'PHP-MCAPI/2.0',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CUSTOMREQUEST  => 'POST',
@@ -100,20 +100,20 @@ class Request
             CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => $this->body,
-            CURLOPT_HTTPHEADER     => [
+            CURLOPT_HTTPHEADER     => array(
                 'Content-Type: multipart/form-data',
-            ],
-        ];
+            ),
+        );
 
         curl_setopt_array($ch, $curlOptions);
 
         $result = curl_exec($ch);
 
         if(!$result) {
-            $result = [
+            $result = array(
                 'error'        => curl_error($ch),
                 'request_info' => curl_getinfo($ch),
-            ];
+            );
         }
 
         $result   = is_array($result) ? $result : json_decode($result, true);
@@ -162,7 +162,6 @@ class Request
             $dirTree[] = $method;
         } else {
             $dirTree[] = $method;
-
 
             $dirTree[] = $response->get('ticket_id', time() . '' . mt_rand(1, 9999999));
         }

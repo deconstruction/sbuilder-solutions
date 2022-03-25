@@ -17,7 +17,7 @@ $useDesk = new UseDeskTokioCity();
 $request = $useDesk->request()
     ->setClientEmail('test' . mt_rand(1, 1) . '@mail.ru')
     ->setMessage('test message')
-    ->setSubject('test subject')
+    ->setSubject('тестовое сообщение')
     ->addSystemReviewId(123);
 
 $push = $request->push();

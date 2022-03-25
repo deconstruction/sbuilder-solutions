@@ -1,13 +1,8 @@
 <?php
 
-namespace UseDesk\Cases\TokioCity\Requests\Ticket;
+namespace UseDesk\Cases\TokioCity\Requests\Tickets;
 
-use UseDesk\Requests\Tickets\RequestCreateTicket as BaseRequestCreateTicket;
-
-/**
- *
- */
-class RequestCreateTicket extends BaseRequestCreateTicket
+class RequestCreateTicket extends \UseDesk\Requests\Tickets\RequestCreateTicket
 {
     /**
      * ID поля ресторана
@@ -85,7 +80,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldRestaurantId($value)
     {
@@ -95,7 +90,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldDateVisit($value)
     {
@@ -105,7 +100,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldOrderId($value)
     {
@@ -115,7 +110,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldDirection($value)
     {
@@ -125,7 +120,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldTypeOrder($value)
     {
@@ -135,7 +130,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldInitiator($value)
     {
@@ -145,7 +140,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldSourceAppeal($value)
     {
@@ -155,7 +150,7 @@ class RequestCreateTicket extends BaseRequestCreateTicket
     /**
      * @param $value
      *
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return $this
      */
     public function setFieldDiscountCardNumber($value)
     {

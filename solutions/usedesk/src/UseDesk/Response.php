@@ -139,12 +139,12 @@ class Response
             return $data;
         }
 
-        $flags = 0;
+        array_walk_recursive($data, function(&$item, $key) {
+            if(is_string($item)) {
+                $item = mb_encode_numericentity($item, array(0x80, 0xffff, 0, 0xffff), 'UTF-8');
+            }
+        });
 
-        if(version_compare(PHP_VERSION, 5.3, '>')) {
-            $flags = JSON_UNESCAPED_UNICODE;
-        }
-
-        return json_encode($data, $flags);
+        return mb_decode_numericentity(json_encode($data), array(0x80, 0xffff, 0, 0xffff), 'UTF-8');
     }
 }

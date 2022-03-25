@@ -23,7 +23,7 @@ class UseDeskTokioCity
     }
 
     /**
-     * @return \UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket
+     * @return \UseDesk\Cases\TokioCity\Requests\Tickets\RequestCreateTicket
      */
     public function request()
     {

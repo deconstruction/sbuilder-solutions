@@ -2,10 +2,9 @@
 
 namespace UseDesk\Cases\TokioCity;
 
-use UseDesk\Cases\TokioCity\Requests\Ticket\RequestCreateTicket;
-use UseDesk\Client as BaseClient;
+use UseDesk\Cases\TokioCity\Requests\Tickets\RequestCreateTicket;
 
-class Client extends BaseClient
+class Client extends \UseDesk\Client
 {
     public function createTicket()
     {
