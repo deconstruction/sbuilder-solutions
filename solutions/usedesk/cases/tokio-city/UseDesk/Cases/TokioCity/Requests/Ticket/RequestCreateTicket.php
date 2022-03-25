@@ -1,14 +1,14 @@
 <?php
 
-namespace UseDesk\Requests\Ticket;
+namespace UseDesk\Cases\TokioCity\Requests\Ticket;
 
-use UseDesk\Requests\Tickets\RequestCreateTicket;
+use UseDesk\Requests\Tickets\RequestCreateTicket as BaseRequestCreateTicket;
 
-class tokioCityRequestCreateTicket extends RequestCreateTicket
+class RequestCreateTicket extends BaseRequestCreateTicket
 {
     const FIELD_ID_RESTAURANT           = 18617;
 
-    const FIELD_ID_DATE_VISIT           = 18617;
+    const FIELD_ID_DATE_TIME_VISIT      = 18646;
 
     const FIELD_ID_ORDER_ID             = 18613;
 
@@ -41,7 +41,7 @@ class tokioCityRequestCreateTicket extends RequestCreateTicket
 
     public function setFieldDateVisit($value)
     {
-        return $this->addField(self::FIELD_ID_DATE_VISIT, $value);
+        return $this->addField(self::FIELD_ID_DATE_TIME_VISIT, $value);
     }
 
     public function setFieldOrderId($value)

@@ -1,11 +1,15 @@
 <?php
 
+use UseDesk\Cases\TokioCity\UseDeskTokioCity;
+
 require_once __DIR__ . '/../autoloader.php';
 
 $useDesk = new UseDeskTokioCity();
 
-$useDesk->getRequest()
-    ->setClientEmail('test@mail.ru')
+$response = $useDesk->request()
+    ->setClientEmail('te21321st@mail.ru')
     ->setMessage('test message')
     ->setSubject('test subject')
     ->push();
+
+var_dump($response);
