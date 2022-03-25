@@ -1,15 +1,28 @@
 <?php
 
+//if(!mkdir('logs/' . date('Y/m/d'), 0755, true) && !is_dir('logs/' . date('Y/m/d'))) {
+//    throw new \RuntimeException(sprintf('Directory "%s" was not created', 'logs/' . date('Y/m/d')));
+//}
+
+session_start();
+
+echo "<pre><code>";
+
 use UseDesk\Cases\TokioCity\UseDeskTokioCity;
 
 require_once __DIR__ . '/../autoloader.php';
 
 $useDesk = new UseDeskTokioCity();
 
-$response = $useDesk->request()
-    ->setClientEmail('te21321st@mail.ru')
+$request = $useDesk->request()
+    ->setClientEmail('test' . mt_rand(1, 1) . '@mail.ru')
     ->setMessage('test message')
     ->setSubject('test subject')
-    ->push();
+    ->addSystemReviewId(123);
 
-var_dump($response);
+$push = $request->push();
+
+var_dump($push->getResponse());
+
+
+echo "</code></pre>";

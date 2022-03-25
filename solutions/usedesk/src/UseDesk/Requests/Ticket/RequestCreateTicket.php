@@ -26,7 +26,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setSubject($value)
     {
@@ -36,7 +36,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setMessage($value)
     {
@@ -58,7 +58,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientEmail($value)
     {
@@ -68,7 +68,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientPhone($value)
     {
@@ -78,7 +78,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientId($value = 'new_client')
     {
@@ -88,7 +88,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientCountry($value)
     {
@@ -98,7 +98,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientCity($value)
     {
@@ -108,7 +108,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setClientAddress($value)
     {
@@ -118,7 +118,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setCompanyName($value)
     {
@@ -126,7 +126,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function createPrivateComment()
     {
@@ -136,7 +136,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setAdditionalId($value)
     {
@@ -146,7 +146,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setType($value)
     {
@@ -162,7 +162,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setTypeQuestion()
     {
@@ -170,7 +170,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setTypeTask()
     {
@@ -178,7 +178,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setTypeProblem()
     {
@@ -186,7 +186,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setTypeIncident()
     {
@@ -196,7 +196,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setPriority($value)
     {
@@ -212,7 +212,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPriorityLow()
     {
@@ -220,7 +220,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPriorityMedium()
     {
@@ -228,7 +228,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPriorityUrgent()
     {
@@ -236,7 +236,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPriorityExtreme()
     {
@@ -246,7 +246,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setStatus($value)
     {
@@ -260,7 +260,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setTags($value)
     {
@@ -270,7 +270,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setAssigneeId($value)
     {
@@ -280,7 +280,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setGroupId($value)
     {
@@ -311,7 +311,7 @@ class RequestCreateTicket extends Request
      * @param int    $key
      * @param scalar $value
      *
-     * @return self
+     * @return $this
      */
     public function addField($key, $value)
     {
@@ -323,7 +323,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setChannelId($value)
     {
@@ -333,7 +333,7 @@ class RequestCreateTicket extends Request
     /**
      * @param array $value
      *
-     * @return self
+     * @return $this
      */
     public function setFiles($value)
     {
@@ -344,7 +344,7 @@ class RequestCreateTicket extends Request
      * @param string $value
      * @param int    $id
      *
-     * @return self
+     * @return $this
      */
     public function setFrom($value, $id = null)
     {
@@ -360,7 +360,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $id
      *
-     * @return self
+     * @return $this
      */
     public function setFromUser($id)
     {
@@ -368,7 +368,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setFromClient()
     {
@@ -378,7 +378,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $id
      *
-     * @return self
+     * @return $this
      */
     public function setFromTrigger($id)
     {
@@ -388,7 +388,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setUserId($value)
     {
@@ -398,7 +398,7 @@ class RequestCreateTicket extends Request
     /**
      * @param int $value
      *
-     * @return self
+     * @return $this
      */
     public function setTriggerId($value)
     {
@@ -406,7 +406,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setNewAddress()
     {
@@ -416,7 +416,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function setPhoneType($value)
     {
@@ -433,7 +433,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPhoneTypeHome()
     {
@@ -441,7 +441,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPhoneTypeMobile()
     {
@@ -449,7 +449,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPhoneTypeStationary()
     {
@@ -457,7 +457,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPhoneTypeFax()
     {
@@ -465,7 +465,7 @@ class RequestCreateTicket extends Request
     }
 
     /**
-     * @return self
+     * @return $this
      */
     public function setPhoneTypeOther()
     {
@@ -475,7 +475,7 @@ class RequestCreateTicket extends Request
     /**
      * @param string $value
      *
-     * @return self
+     * @return $this
      */
     public function addFile($value)
     {

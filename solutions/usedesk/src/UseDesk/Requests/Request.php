@@ -24,7 +24,7 @@ class Request
     /**
      * @var array
      */
-    protected $body = array();
+    protected $body = [];
 
     /**
      * @param Client $client
@@ -54,22 +54,23 @@ class Request
     }
 
     /**
-     * @param $key
+     * @param string $key
+     * @param null   $default
      *
      * @return mixed|null
      */
-    public function getFromBody($key)
+    public function getFromBody($key, $default = null)
     {
-        return isset($this->body[$key]) ? $this->body[$key] : null;
+        return isset($this->body[$key]) ? $this->body[$key] : $default;
     }
 
     /**
-     * @param array $values
+     * @param array  $values
      * @param scalar $value
      *
+     * @return void
      * @throws RuntimeException
      *
-     * @return void
      */
     protected function checkValue($values, $value)
     {
@@ -89,7 +90,7 @@ class Request
 
         $ch = curl_init($this->client->url . $this->method);
 
-        $curlOptions = array(
+        $curlOptions = [
             CURLOPT_USERAGENT      => 'PHP-MCAPI/2.0',
             CURLOPT_RETURNTRANSFER => true,
             CURLOPT_CUSTOMREQUEST  => 'POST',
@@ -99,24 +100,28 @@ class Request
             CURLOPT_HTTP_VERSION   => CURL_HTTP_VERSION_1_1,
             CURLOPT_POST           => true,
             CURLOPT_POSTFIELDS     => $this->body,
-            CURLOPT_HTTPHEADER     => array(
+            CURLOPT_HTTPHEADER     => [
                 'Content-Type: multipart/form-data',
-            ),
-        );
+            ],
+        ];
 
         curl_setopt_array($ch, $curlOptions);
 
         $result = curl_exec($ch);
-        if($result) {
-            return new Response($this->body, json_decode($result, true));
+
+        if(!$result) {
+            $result = [
+                'error'        => curl_error($ch),
+                'request_info' => curl_getinfo($ch),
+            ];
         }
 
-        return array(
-            'result'       => $result,
-            'error'        => curl_error($ch),
-            'body'         => $this->body,
-            'request_info' => curl_getinfo($ch),
-        );
+        $result   = is_array($result) ? $result : json_decode($result, true);
+        $response = new Response($this->body, $result);
+
+        $this->logged(curl_getinfo($ch), $response);
+
+        return $response;
     }
 
     /**
@@ -134,5 +139,40 @@ class Request
      */
     protected function preparePush()
     {
+    }
+
+    /**
+     * @param array    $curl
+     * @param Response $response
+     *
+     * @return void
+     */
+    private function logged($curl, $response)
+    {
+        $dirTree = array(
+            'logs',
+            $response->hasErrors() ? 'errors' : 'success',
+            date('Y/m/d'),
+        );
+
+        $method = str_replace('/', '-', $this->method);
+        if($response->hasErrors()) {
+            $dirTree[] = session_id();
+            $dirTree[] = time();
+            $dirTree[] = $method;
+        } else {
+            $dirTree[] = $method;
+
+
+            $dirTree[] = $response->get('ticket_id', time() . '' . mt_rand(1, 9999999));
+        }
+
+        $dir = implode('/', $dirTree);
+
+        if(file_exists($dir) || mkdir($dir, 0755, true) || is_dir($dir)) {
+            file_put_contents("$dir/body.json", $response->toJson($response->getBody()));
+            file_put_contents("$dir/response.json", $response->toJson($response->getResponse()));
+            file_put_contents("$dir/curl.json", json_encode($curl));
+        }
     }
 }

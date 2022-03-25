@@ -79,12 +79,13 @@ class Response
      * Получить значение
      *
      * @param string $key
+     * @param mixed  $default
      *
      * @return mixed
      */
-    public function get($key)
+    public function get($key, $default = null)
     {
-        return isset($this->response[$key]) ? $this->response[$key] : null;
+        return isset($this->response[$key]) ? $this->response[$key] : $default;
     }
 
     /**
@@ -125,5 +126,25 @@ class Response
     public function count()
     {
         return count($this->response);
+    }
+
+    /**
+     * @param array $data
+     *
+     * @return false|mixed|string
+     */
+    public function toJson($data)
+    {
+        if(!is_array($data)) {
+            return $data;
+        }
+
+        $flags = 0;
+
+        if(version_compare(PHP_VERSION, 5.3, '>')) {
+            $flags = JSON_UNESCAPED_UNICODE;
+        }
+
+        return json_encode($data, $flags);
     }
 }

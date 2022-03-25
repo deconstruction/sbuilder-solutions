@@ -9,10 +9,17 @@ class UseDeskTokioCity
 {
     private $request;
 
+    /**
+     * @var \UseDesk\Cases\TokioCity\Client
+     */
+    private $client;
+
+    public $from = 'tokio-city.ru';
+
     public function __construct()
     {
-        $client        = new Client();
-        $this->request = $client->createTicket();
+        $this->client  = new Client();
+        $this->request = $this->client->createTicket();
     }
 
     /**
@@ -21,5 +28,13 @@ class UseDeskTokioCity
     public function request()
     {
         return $this->request;
+    }
+
+    /**
+     * @return \UseDesk\Cases\TokioCity\Client
+     */
+    public function client()
+    {
+        return $this->client;
     }
 }

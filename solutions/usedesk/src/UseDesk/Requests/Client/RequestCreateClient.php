@@ -33,7 +33,6 @@ class RequestCreateClient extends Request
         if(is_scalar($value)) {
             $value = explode(',', $value);
             $value = array_map('trim', $value);
-            $value = json_encode($value);
         }
 
         return $this->setBody('emails', $value);
