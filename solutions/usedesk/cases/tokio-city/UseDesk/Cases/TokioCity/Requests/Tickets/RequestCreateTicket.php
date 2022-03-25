@@ -190,18 +190,6 @@ class RequestCreateTicket extends \UseDesk\Requests\Tickets\RequestCreateTicket
     {
         parent::preparePush();
 
-        if($this->review) {
-            $comment = "Текст отзыва: $this->review" . PHP_EOL;
-            $comment .= $this->getFromBody('message', '') . PHP_EOL;
-            $this->setMessage($comment);
-        }
-
-        if($this->imageUrl) {
-            $comment = $this->getFromBody('message', '') . PHP_EOL;
-            $comment .= "Ссылка на изображение: $this->imageUrl";
-            $this->setMessage($comment);
-        }
-
         if($email = $this->getFromBody('client_email')) {
             $client = $this->client->clients()->setQuery($email)->push();
 

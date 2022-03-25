@@ -2,7 +2,6 @@
 
 namespace UseDesk\Requests\Tickets;
 
-use CURLFile;
 use UseDesk\Requests\Request;
 
 /**
@@ -16,6 +15,11 @@ class RequestCreateTicket extends Request
      * @var array
      */
     protected $fields = array();
+
+    /**
+     * @var int
+     */
+    protected $countFiles = 0;
 
     protected function preparePush()
     {
@@ -479,14 +483,18 @@ class RequestCreateTicket extends Request
      */
     public function addFile($value)
     {
-        $file  = new CURLFile($value);
-        $files = $this->getFromBody('files');
-        if(is_array($files)) {
-            $files[] = $file;
-        } else {
-            $files = array($file);
+        if(!is_string($value)) {
+            return $this;
         }
 
-        return $this->setBody('files', $files);
+        $field = "files[$this->countFiles]";
+        ++$this->countFiles;
+
+        $file = realpath($value);
+        if(class_exists('\CURLFile')) {
+            $file = new \CURLFile($value);
+        }
+
+        return $this->setBody($field, $file);
     }
 }
