@@ -12,7 +12,7 @@
         const forms = document.querySelectorAll('[data-recaptcha]');
         const metaKey = document.querySelector('meta[name="recaptcha-public-key"]')
 
-        if (forms.length > 0 && metaKey.length > 0) {
+        if (forms.length > 0 && metaKey !== null) {
             const recaptchaClientKey = metaKey.getAttribute('content');
 
             const script = document.createElement('script');
