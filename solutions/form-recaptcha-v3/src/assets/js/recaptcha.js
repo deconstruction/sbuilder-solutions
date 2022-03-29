@@ -4,7 +4,7 @@
  * Version: 1.1.1
  */
 
-['load', 'recaptcha'].forEach(event => {
+['DOMContentLoaded', 'recaptcha'].forEach(event => {
     window.addEventListener(event, () => {
 
         console.log('recaptcha script loaded');
