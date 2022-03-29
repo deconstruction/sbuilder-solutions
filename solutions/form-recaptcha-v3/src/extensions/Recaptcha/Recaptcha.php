@@ -41,6 +41,17 @@ class Recaptcha
         return $recaptcha['score'] <= $score;
     }
 
+    public function checkFromPost($score)
+    {
+        if(!empty($_POST['recaptcha_token'])) {
+            $recaptcha = $this->request($_POST['recaptcha_token']);
+
+            return $recaptcha['score'] <= $score;
+        }
+
+        return false;
+    }
+
 	private function getIp()
 	{
 		if (!empty($_SERVER['HTTP_CLIENT_IP'])) {
