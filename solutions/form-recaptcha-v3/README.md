@@ -4,6 +4,9 @@
 
 * [Получить ключи](https://www.google.com/recaptcha/admin/create).
 
+## Требования
+* PHP выше 5.2.
+
 ## Ключи
 ![Google Recaptcha Keys](images/keys.jpg)
 
@@ -16,9 +19,9 @@
 
 ## Установка
 
-1. Для начала закачиваем исходники в CMS. [sRecaptcha.php](src/extensions/Recaptcha/Recaptcha.php) необходимо загрузить в папку /cms/extensions/. JS в любую папку.
+1. Для начала закачиваем исходники в CMS. Папку `extensions` необходимо необходимо загрузить в папку `/cms`.
 
-2. На страницу, где форма, необходимо установить скрипт.
+4. На страницу, где форма, необходимо установить скрипт.
 ```html
 <scrpt async src="/assets/js/recaptcha.js"></scrpt> 
 ```
@@ -43,7 +46,10 @@
 ```php
 $recaptcha = new \Recaptcha\Recaptcha('secret key');
 
+// Вариант 1
 $error = $recaptcha->check(0.5, $_POST['recaptcha_token']);
+// Вариант 2, проверка пост поля происходит в методе.
+$error = $recaptcha->checkFromPost(0.5);
 
 $f_value = $recaptcha->response;
 $f_value .= PHP_EOL . PHP_EOL;
