@@ -1,17 +1,22 @@
+/**
+ * Recaptcha V3 for SBuilder platform
+ *
+ * Version: 1.1.0
+ */
+
 ['load', 'recaptcha'].forEach(event => {
 	window.addEventListener(event, () => {
 
 		console.log('recaptcha script loaded');
 
 		const forms = document.querySelectorAll('[data-recaptcha]');
+		const metaKey = document.querySelector('meta[name="recaptcha-public-key"]')
 
-		if (forms.length > 0) {
-			const recaptchaClientKey = '***';
-
+		if (forms.length > 0 && metaKey.length > 0) {
 			const script = document.createElement('script');
 			script.onload = function () {
 				grecaptcha.ready(function() {
-					grecaptcha.execute(recaptchaClientKey, {action: 'homepage'}).then(function(token) {
+					grecaptcha.execute(metaKey.getAttribute('content'), {action: 'homepage'}).then(function(token) {
 						forms.forEach(form => {
 
 						// Созадем инпут для токена и присваеваем ему полученый токен

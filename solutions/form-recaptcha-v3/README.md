@@ -7,10 +7,11 @@
 ## Ключи
 ![Google Recaptcha Keys](images/keys.jpg)
 
-Ключ сайта необходим для скрипта JS. В [исходнике](src/assets/js/recaptcha.js) замените значение переменной *recaptchaClientKey*.
+Ключ сайта необходим для скрипта JS.
 
-```js
-const recaptchaClientKey = '***';
+Добавьте в ```<head></head>``` сайта следующий мета тег с ключом сайта:
+```html
+<meta name="recaptcha-public-key" content="Ключ сайта">
 ```
 
 ## Установка
