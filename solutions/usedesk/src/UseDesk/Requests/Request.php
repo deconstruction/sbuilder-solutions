@@ -150,6 +150,7 @@ class Request
     private function logged($curl, $response)
     {
         $dirTree = array(
+            __DIR__,
             'logs',
             $response->hasErrors() ? 'errors' : 'success',
             date('Y/m/d'),
