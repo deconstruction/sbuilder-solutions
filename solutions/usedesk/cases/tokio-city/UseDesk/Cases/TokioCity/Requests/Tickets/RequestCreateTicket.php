@@ -12,7 +12,7 @@ class RequestCreateTicket extends \UseDesk\Requests\Tickets\RequestCreateTicket
     /**
      * ID поля даты визита
      */
-    const FIELD_ID_DATE_TIME_VISIT = 18646;
+    const FIELD_ID_DATE_TIME_VISIT = 18673;
 
     /**
      * ID поля номера заказа
