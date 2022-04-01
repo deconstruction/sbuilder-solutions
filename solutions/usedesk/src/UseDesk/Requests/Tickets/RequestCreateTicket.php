@@ -489,11 +489,8 @@ class RequestCreateTicket extends Request
 
         $field = "files[$this->countFiles]";
         ++$this->countFiles;
-
-        $file = realpath($value);
-        if(class_exists('\CURLFile')) {
-            $file = new \CURLFile($value);
-        }
+        
+        $file = new \CURLFile($value);
 
         return $this->setBody($field, $file);
     }
