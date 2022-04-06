@@ -5,7 +5,7 @@
 * [Получить ключи](https://www.google.com/recaptcha/admin/create).
 
 ## Требования
-* PHP выше 5.3.
+* PHP >= 5.3.
 
 ## Ключи
 ![Google Recaptcha Keys](images/keys.jpg)
