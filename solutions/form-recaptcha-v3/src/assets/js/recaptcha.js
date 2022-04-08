@@ -18,9 +18,8 @@
             const script = document.createElement('script');
             script.onload = function () {
                 grecaptcha.ready(function () {
-                    grecaptcha.execute(recaptchaClientKey, {action: 'homepage'}).then(function (token) {
-                        forms.forEach(form => {
-
+                    forms.forEach(form => {
+                        grecaptcha.execute(recaptchaClientKey, {action: 'homepage'}).then(function (token) {
                             // Созадем инпут для токена и присваеваем ему полученый токен
                             let input = form.querySelector('[name="recaptcha_token"]');
 
