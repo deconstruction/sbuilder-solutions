@@ -23,7 +23,7 @@
 
 4. На страницу, где форма, необходимо установить скрипт.
 ```html
-<scrpt async src="/assets/js/recaptcha.js"></scrpt> 
+<script async src="/assets/js/recaptcha.js"></script> 
 ```
 
 3. На необходимую форму необходимо повесить тег: **data-recaptcha**
