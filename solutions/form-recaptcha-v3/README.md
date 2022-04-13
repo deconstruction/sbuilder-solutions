@@ -44,6 +44,14 @@
 
 ***secret key*** - подствьте ключ из поля *секретный ключ*.
 ```php
+$error = true;
+
+if(empty($_POST['recaptcha_token'])) {
+    $error = true;
+
+    return;
+}
+
 $recaptcha = new \Recaptcha\Recaptcha('secret key');
 
 // Вариант 1
