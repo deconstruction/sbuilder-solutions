@@ -55,7 +55,7 @@
 ***secret key*** - подставьте ключ из поля *секретный ключ*.
 
 ```php
-if(empty($_POST['recaptcha_token']) && !class_exists('\Recaptcha\Recaptcha')) {
+if(empty($_POST['recaptcha_token']) || !class_exists('\Recaptcha\Recaptcha')) {
     $error = true;
 } else {
     $recaptcha = new \Recaptcha\Recaptcha('secret key');
