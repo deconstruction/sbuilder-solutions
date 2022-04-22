@@ -8,20 +8,20 @@
 
 ```php
 foreach($GLOBALS['_GET'] as $key => $route) {
-    if(
-        (strpos($key, '_scid') !== false ||
-        strpos($key, '_sid') !== false) &&
-        $route !== strtolower($route)
-    ) {
-        header('Location: ' . strtolower($GLOBALS['_SERVER']['REQUEST_URI']));
-    
-        break;
-    }
-    
-    if(is_numeric($route)) {
-        sb_404();
-        
-        break;
+    if(strpos($key, '_scid') !== false || strpos($key, '_sid') !== false) {
+            
+        if($route !== strtolower($route)) {
+            header('Location: ' . strtolower($GLOBALS['_SERVER']['REQUEST_URI']));
+            
+            break;
+        }
+            
+        if(is_numeric($route)) {
+            sb_404();
+                
+            break;
+        }
+            
     }
 }
 ```
