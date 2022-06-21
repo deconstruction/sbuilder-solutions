@@ -15,7 +15,7 @@ class Recaptcha
 		$this->privateKey = $privateKey;
 	}
 
-	private function request($token)
+	public function request($token)
 	{
 		$params = array(
 			'secret'   => $this->privateKey,
