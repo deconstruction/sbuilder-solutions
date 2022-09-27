@@ -60,7 +60,6 @@ if(empty($_POST['recaptcha_token']) || !class_exists('\Recaptcha\Recaptcha')) {
 } else {
     $recaptcha = new \Recaptcha\Recaptcha('secret key');
 
-    // Вариант 1
     $error = $recaptcha->check(0.5, $_POST['recaptcha_token']);
 
     $f_value = $recaptcha->response;
