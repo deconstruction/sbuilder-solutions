@@ -62,8 +62,6 @@ if(empty($_POST['recaptcha_token']) || !class_exists('\Recaptcha\Recaptcha')) {
 
     // Вариант 1
     $error = $recaptcha->check(0.5, $_POST['recaptcha_token']);
-    // Вариант 2, проверка пост поля происходит в методе.
-    $error = $recaptcha->checkFromPost(0.5);
 
     $f_value = $recaptcha->response;
     $f_value .= PHP_EOL . PHP_EOL;
