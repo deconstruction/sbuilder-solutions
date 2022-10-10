@@ -80,7 +80,7 @@ echo '<input type="hidden" name="user_f_8" value="1" />';
 ```
 8 - id поля
 
-(images/error-captcha1.jpg)
+!(images/error-captcha1.jpg)
 
 2. В поле recaptcha добавить условие:
 ```php
@@ -108,4 +108,4 @@ if(isset($_POST['user_f_8'])) {
 
 8 - id поля
 
-(images/error-captcha2.jpg)
+!(images/error-captcha2.jpg)
