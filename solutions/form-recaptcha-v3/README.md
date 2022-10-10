@@ -71,7 +71,7 @@ if(empty($_POST['recaptcha_token']) || !class_exists('\Recaptcha\Recaptcha')) {
 ![Новое поле для Recaptcha](images/field-in-module-2.jpg)
 
 
-Если на этом же модуле работает не только форма а и вывод карточек, возникает ошибка добавление карточек ( Некорректно заполнено поле "recaptcha"! ) для решения этой проблемы нужно:
+Если на этом же модуле работает не только форма а и вывод карточек, возникает ошибка при добавлении карточек ( Некорректно заполнено поле "recaptcha"! ) для решения этой проблемы нужно:
 1. Добаить поле PHP код recaptcha_admin в поле ( PHP-код (выполняется в момент формирования HTML-кода окна) ) прописать:
 ```php
 
@@ -80,7 +80,15 @@ echo '<input type="hidden" name="user_f_8" value="1" />';
 ```
 8 - id поля
 
+(images/error-captcha1.jpg)
+
 2. В поле recaptcha добавить условие:
+```php
+if(isset($_POST['user_f_8'])) {
+    $error = false;
+}
+```
+
 ```php
 if(isset($_POST['user_f_8'])) {
     $error = false;
@@ -100,3 +108,4 @@ if(isset($_POST['user_f_8'])) {
 
 8 - id поля
 
+(images/error-captcha2.jpg)
