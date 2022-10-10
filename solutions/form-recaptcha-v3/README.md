@@ -87,7 +87,7 @@ if(isset($_POST['user_f_8'])) {
 } else if(empty($_POST['recaptcha_token']) || !class_exists('\Recaptcha\Recaptcha')) {
     $error = true;
 } else {
-    $recaptcha = new \Recaptcha\Recaptcha('6LdSyU8iAAAAAKw4jPGHKs8wEuCSzwpLWiQXy2RG');
+    $recaptcha = new \Recaptcha\Recaptcha('secret key');
 
     $error = $recaptcha->check(0.5, $_POST['recaptcha_token']);
 
