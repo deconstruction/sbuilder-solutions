@@ -7,3 +7,4 @@
 * [zenDesk](solutions/zendesk/README.md)
 * [useDesk](solutions/usedesk/README.md)
 * [Маршрутизация](solutions/routes/README.md)
+* [Перелинковка](solutions/previous-next/README.md)
