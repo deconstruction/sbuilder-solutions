@@ -5,9 +5,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     if (isDebug) {
         console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
-        if (forms.length !== 0) {
-            console.info(forms);
-        }
     }
 
     
@@ -18,9 +15,10 @@ document.addEventListener('DOMContentLoaded', () => {
         }
 
         const eventName = `ajax_form_${formId}`;
+        const eventNameFailed = `${eventName}_failed`;
 
         if (isDebug) {
-            console.info(`Event name ajax form: ${eventName}`);
+            console.info(form, `Success event name ajax form: ${eventName}. Failed event name ajax form: ${eventNameFailed}`);
         }
 
         form.addEventListener('submit', function (e) {
@@ -39,7 +37,10 @@ document.addEventListener('DOMContentLoaded', () => {
                     return r.text();
                 })
                 .then(() => document.dispatchEvent(new CustomEvent(eventName, {detail:form})))
-                .catch(e => console.error(e));
+                .catch(e => {
+                    console.error(e);
+                    document.dispatchEvent(new CustomEvent(eventNameFailed, {detail:form}));
+                });
         });
     });
 });
