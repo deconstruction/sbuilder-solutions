@@ -6,7 +6,6 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isDebug) {
         console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
     }
-
     
     forms.forEach((form, i) => {
         let formId = i;
