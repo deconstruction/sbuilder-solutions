@@ -1,5 +1,6 @@
 document.addEventListener('DOMContentLoaded', () => {
-    const forms = document.querySelectorAll('[action="/ajax/"]');
+    const action = '/ajax/';
+    const forms = document.querySelectorAll(`[action="${action}"]`);
     const isDebug = document.location.search.indexOf('debug_ajax') !== -1;
 
     if (isDebug) {
