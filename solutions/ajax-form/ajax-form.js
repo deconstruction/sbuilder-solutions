@@ -6,14 +6,19 @@ document.addEventListener('DOMContentLoaded', () => {
     if (isDebug) {
         console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
     }
+
     
-    forms.forEach((form, i) => {
-        let formId = i;
+    forms.forEach(form => {
+        let formId = form.dataset.ajax !== undefined ? form.dataset.ajax : '';
         if (form.getAttribute('id')) {
             formId = form.getAttribute('id');
         }
 
-        const eventName = `ajax_form_${formId}`;
+        if (formId) {
+            formId = `_${formId}`;
+        }
+
+        const eventName = `ajax${formId}`;
         const eventNameFailed = `${eventName}_failed`;
 
         if (isDebug) {
