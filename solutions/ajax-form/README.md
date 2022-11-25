@@ -14,6 +14,22 @@
 </form>
 ```
 
+# Шаблоны для билдера
+## Шаблон макета страницы
+```html
+{AJAX_FORM_1}
+{AJAX_FORM_2}
+{AJAX_FORM_3}
+{AJAX_FORM_4}
+{AJAX_FORM_5}
+```
+
+## Шаблон технической формы добавления элемента
+```html
+{MESSAGE}
+<input type='hidden' name='pl_plugin_ident' value='{P_PLUGIN_IDENT}' />
+```
+
 
 # Дебаг форм
 
