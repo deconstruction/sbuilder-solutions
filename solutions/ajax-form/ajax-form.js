@@ -1,8 +1,4 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const action = '/ajax/';
-    const forms = document.querySelectorAll(`[action="${action}"]`);
-    const isDebug = document.location.search.indexOf('debug_ajax') !== -1;
-
+document.addEventListener('DOMContentLoaded', async () => {
     const getFormId = (form) => {
         let formId = '';
 
@@ -21,18 +17,30 @@ document.addEventListener('DOMContentLoaded', () => {
         return formId;
     }
 
-    if (isDebug) {
-        console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
+    const action = '/ajax/';
+    const forms = document.querySelectorAll(`[action="${action}"]`);
+    const isDebug = document.location.search.indexOf('debug_ajax') !== -1;
+    const debugData = [];
+
+    let dataPluginsIdent = '';
+    if(isDebug) {
+        let response  = await fetch(action);
+        dataPluginsIdent  = await (response.text());
     }
 
-    
+
     forms.forEach(form => {
         const eventName = `ajax${getFormId(form)}`;
         const eventNameFailed = `${eventName}_failed`;
+        const pluginIdent = form.querySelector('[name="pl_plugin_ident"]');
 
-        if (isDebug) {
-            console.info(form, `Success event name ajax form: ${eventName}. Failed event name ajax form: ${eventNameFailed}`);
-        }
+        debugData.push({
+            form: form,
+            successEvent: eventName,
+            failedEvent: eventNameFailed,
+            pluginIdent: pluginIdent !== null ? pluginIdent.value : false,
+            'has "pl_plugin_ident" in action page': pluginIdent !== null ? dataPluginsIdent.indexOf(pluginIdent.value) !== -1 : false,
+        });
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
@@ -43,41 +51,23 @@ document.addEventListener('DOMContentLoaded', () => {
                 cache: 'no-cache',
             })
                 .then(r => {
-                    if(r.url.indexOf('?pl') === -1) {
+                    if (r.url.indexOf('?pl') === -1) {
                         throw Error('Форма не была отправлена! Проверьте наличие pl_plugin_ident поля в форме отправки или обязательные поля в технической форме.');
                     }
 
                     return r.text();
                 })
-                .then(() => document.dispatchEvent(new CustomEvent(eventName, {detail:form})))
+                .then(() => document.dispatchEvent(new CustomEvent(eventName, { detail: form })))
                 .catch(e => {
                     console.error(e);
-                    document.dispatchEvent(new CustomEvent(eventNameFailed, {detail:form}));
+                    document.dispatchEvent(new CustomEvent(eventNameFailed, { detail: form }));
                 });
         });
     });
-});
 
-document.addEventListener('ajax_test', () => {
-    console.log('Success test!');
-});
-
-document.addEventListener('ajax_test_failed', () => {
-    console.log('Failed test!');
-});
-
-document.addEventListener('ajax', () => {
-    console.log('Success!');
-});
-
-document.addEventListener('ajax_failed', () => {
-    console.log('Failed!');
-});
-
-document.addEventListener('ajax_test2', () => {
-    console.log('Success test2!');
-});
-
-document.addEventListener('ajax_test2_failed', () => {
-    console.log('Failed test2!');
+    if (isDebug) {
+        console.group('Ajax forms.');
+        console.table(debugData);
+        console.groupEnd();
+    }
 });
