@@ -30,20 +30,25 @@ document.addEventListener('DOMContentLoaded', async () => {
 
 
     forms.forEach(form => {
-        const eventName = `ajax${getFormId(form)}`;
-        const eventNameFailed = `${eventName}_failed`;
+        const eventSended = `ajax${getFormId(form)}`;
+        const eventSuccess = `${eventSended}_success`;
+        const eventFailed = `${eventSended}_failed`;
+
         const pluginIdent = form.querySelector('[name="pl_plugin_ident"]');
 
         debugData.push({
             form: form,
-            successEvent: eventName,
-            failedEvent: eventNameFailed,
-            pluginIdent: pluginIdent !== null ? pluginIdent.value : false,
+            'Sended event': eventSended,
+            'Success event': eventSuccess,
+            'Failed event': eventFailed,
+            'pl_plugin_ident': pluginIdent !== null ? pluginIdent.value : false,
             'has "pl_plugin_ident" in action page': pluginIdent !== null ? dataPluginsIdent.indexOf(pluginIdent.value) !== -1 : false,
         });
 
         form.addEventListener('submit', function (e) {
             e.preventDefault();
+
+            document.dispatchEvent(new CustomEvent(eventSended, {detail: form}));
 
             fetch(form.action, {
                 method: 'POST',
@@ -57,10 +62,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     return r.text();
                 })
-                .then(() => document.dispatchEvent(new CustomEvent(eventName, { detail: form })))
+                .then(() => document.dispatchEvent(new CustomEvent(eventSuccess, {detail: form})))
                 .catch(e => {
                     console.error(e);
-                    document.dispatchEvent(new CustomEvent(eventNameFailed, { detail: form }));
+                    document.dispatchEvent(new CustomEvent(eventFailed, {detail: form}));
                 });
         });
     });
