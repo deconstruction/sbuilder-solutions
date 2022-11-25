@@ -23,9 +23,9 @@ document.addEventListener('DOMContentLoaded', async () => {
     const debugData = [];
 
     let dataPluginsIdent = '';
-    if(isDebug) {
-        let response  = await fetch(action);
-        dataPluginsIdent  = await (response.text());
+    if (isDebug) {
+        let response = await fetch(action);
+        dataPluginsIdent = await (response.text());
     }
 
 
@@ -36,6 +36,8 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const pluginIdent = form.querySelector('[name="pl_plugin_ident"]');
 
+        const formData = new FormData(form);
+
         debugData.push({
             form: form,
             'Sended event': eventSended,
@@ -45,14 +47,14 @@ document.addEventListener('DOMContentLoaded', async () => {
             'has "pl_plugin_ident" in action page': pluginIdent !== null ? dataPluginsIdent.indexOf(pluginIdent.value) !== -1 : false,
         });
 
-        form.addEventListener('submit', function (e) {
+        document.dispatchEvent(new CustomEvent(eventSended, { detail: form }));
+
+        form.addEventListener('submit', async function (e) {
             e.preventDefault();
 
-            document.dispatchEvent(new CustomEvent(eventSended, {detail: form}));
-
-            fetch(form.action, {
+            await fetch(form.action, {
                 method: 'POST',
-                body: new FormData(form),
+                body: formData,
                 cache: 'no-cache',
             })
                 .then(r => {
@@ -62,10 +64,10 @@ document.addEventListener('DOMContentLoaded', async () => {
 
                     return r.text();
                 })
-                .then(() => document.dispatchEvent(new CustomEvent(eventSuccess, {detail: form})))
+                .then(() => document.dispatchEvent(new CustomEvent(eventSuccess, { detail: form })))
                 .catch(e => {
                     console.error(e);
-                    document.dispatchEvent(new CustomEvent(eventFailed, {detail: form}));
+                    document.dispatchEvent(new CustomEvent(eventFailed, { detail: form }));
                 });
         });
     });
