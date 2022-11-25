@@ -4,12 +4,17 @@ document.addEventListener('DOMContentLoaded', () => {
     const isDebug = document.location.search.indexOf('debug_ajax') !== -1;
 
     const getFormId = (form) => {
-        let formId = form.dataset.ajax !== undefined ? form.dataset.ajax : '';
+        let formId = '';
+
+        if (form.dataset.ajax !== undefined) {
+            formId = form.dataset.ajax;
+        }
+
         if (form.getAttribute('id')) {
             formId = form.getAttribute('id');
         }
 
-        if (formId) {
+        if (formId !== '') {
             formId = `_${formId}`;
         }
 
@@ -22,9 +27,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
     
     forms.forEach(form => {
-        let formId = getFormId(form);
-
-        const eventName = `ajax${formId}`;
+        const eventName = `ajax${getFormId(form)}`;
         const eventNameFailed = `${eventName}_failed`;
 
         if (isDebug) {
@@ -53,4 +56,28 @@ document.addEventListener('DOMContentLoaded', () => {
                 });
         });
     });
+});
+
+document.addEventListener('ajax_test', () => {
+    console.log('Success test!');
+});
+
+document.addEventListener('ajax_test_failed', () => {
+    console.log('Failed test!');
+});
+
+document.addEventListener('ajax', () => {
+    console.log('Success!');
+});
+
+document.addEventListener('ajax_failed', () => {
+    console.log('Failed!');
+});
+
+document.addEventListener('ajax_test2', () => {
+    console.log('Success test2!');
+});
+
+document.addEventListener('ajax_test2_failed', () => {
+    console.log('Failed test2!');
 });
