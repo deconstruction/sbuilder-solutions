@@ -36,8 +36,6 @@ document.addEventListener('DOMContentLoaded', async () => {
 
         const pluginIdent = form.querySelector('[name="pl_plugin_ident"]');
 
-        const formData = new FormData(form);
-
         debugData.push({
             form: form,
             'Sended event': eventSended,
@@ -47,10 +45,12 @@ document.addEventListener('DOMContentLoaded', async () => {
             'has "pl_plugin_ident" in action page': pluginIdent !== null ? dataPluginsIdent.indexOf(pluginIdent.value) !== -1 : false,
         });
 
-        document.dispatchEvent(new CustomEvent(eventSended, { detail: form }));
-
         form.addEventListener('submit', async function (e) {
             e.preventDefault();
+
+            const formData = new FormData(form);
+
+            document.dispatchEvent(new CustomEvent(eventSended, { detail: form }));
 
             await fetch(form.action, {
                 method: 'POST',
@@ -58,6 +58,10 @@ document.addEventListener('DOMContentLoaded', async () => {
                 cache: 'no-cache',
             })
                 .then(r => {
+                    if (isDebug) {
+                        console.table(r);
+                    }
+
                     if (r.url.indexOf('?pl') === -1) {
                         throw Error('Форма не была отправлена! Проверьте наличие pl_plugin_ident поля в форме отправки или обязательные поля в технической форме.');
                     }
