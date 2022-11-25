@@ -21,7 +21,8 @@
 
 Будет выведена информация по найденым формам.
 
-![image](https://user-images.githubusercontent.com/114495719/203917843-05e0871e-ad66-45b7-b132-e083771d985d.png)
+![image](https://user-images.githubusercontent.com/114495719/203943034-b0034873-cc47-4081-99e4-2c6c3e8d6aec.png)
+
 
 
 # Отслеживание событий отправки формы
