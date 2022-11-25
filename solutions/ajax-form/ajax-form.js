@@ -3,12 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const forms = document.querySelectorAll(`[action="${action}"]`);
     const isDebug = document.location.search.indexOf('debug_ajax') !== -1;
 
-    if (isDebug) {
-        console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
-    }
-
-    
-    forms.forEach(form => {
+    const getFormId = (form) => {
         let formId = form.dataset.ajax !== undefined ? form.dataset.ajax : '';
         if (form.getAttribute('id')) {
             formId = form.getAttribute('id');
@@ -17,6 +12,17 @@ document.addEventListener('DOMContentLoaded', () => {
         if (formId) {
             formId = `_${formId}`;
         }
+
+        return formId;
+    }
+
+    if (isDebug) {
+        console.info(`Load script for ajax forms. Forms finded: ${forms.length}`);
+    }
+
+    
+    forms.forEach(form => {
+        let formId = getFormId(form);
 
         const eventName = `ajax${formId}`;
         const eventNameFailed = `${eventName}_failed`;
