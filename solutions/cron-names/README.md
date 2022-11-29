@@ -9,3 +9,12 @@ $_SESSION['sbPlugins']->addToCron('pl_external_script/cron/pl_external_script.ph
 ```php
 $_SESSION['sbPlugins']->addToCron('pl_external_script/cron/pl_external_script.php', 'fExternal_Script_Cron_Refresh('.$row[0].')', sprintf(PL_EXTERNAL_SCRIPT_H_CRON, $row[1]), PL_EXTERNAL_SCRIPT_DESC_CRON);
 ```
+4. Перейдите в файл `/cms/plugins/pl_external_script/pl_external_script.php`
+5. Найдите строку **67** со следующим содержимым:
+```php
+sb_wordwrap($row['es_url'], 100, '...', true),
+```
+6. Замените эту строку на следующее:
+```php
+$row['es_url'],
+```
