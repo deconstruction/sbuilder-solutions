@@ -1,75 +1,73 @@
 # Пример перелинковки 
 
 ```php
-<?php if(isset($_GET['test'])) { ?>
-<pre><code>
-<?php
-    $previous = sql_assoc('
-        SELECT sb1.p_url, sb1.p_title, sbc.cat_url FROM sb_plugins_1 sb1
-        JOIN sb_catlinks sbcl ON sb1.p_id = sbcl.link_el_id
-        JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_1" AND sbc.cat_id = ?)
-        WHERE sb1.p_id < ?
-        ORDER BY sb1.p_id DESC
-        LIMIT 1;
-        ',
-        '{CAT_ID}',
-        '{ID}'
-    );
+    $ids = array();
+    $pluginId = 5;
+    $count = 2;
+    
+    $sql = sprintf('
+        SELECT sbp.p_id FROM sb_plugins_%d sbp
+        JOIN sb_catlinks sbcl ON sbp.p_id = sbcl.link_el_id
+        JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_%d" AND sbc.cat_id = %d)
+        WHERE sbp.p_active = 1
+        AND sbp.p_id < %d
+        ORDER BY sbp.p_id DESC
+        LIMIT %d
+        ', $pluginId, $pluginId, '{CAT_ID}', '{ID}', $count);
+    
+    $previous = sql_assoc($sql);
     
     if(!$previous) {
-        $previous = sql_assoc('
-            SELECT sb1.p_url, sb1.p_title, sbc.cat_url FROM sb_plugins_1 sb1
-            JOIN sb_catlinks sbcl ON sb1.p_id = sbcl.link_el_id
-            JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_1" AND sbc.cat_id = ?)
-            ORDER BY sb1.p_id DESC
-            LIMIT 1;
-            ',
-            '{CAT_ID}',
-            '{ID}'
-        );
+        $sql = sprintf('
+            SELECT sbp.p_id FROM sb_plugins_%d sbp
+            JOIN sb_catlinks sbcl ON sbp.p_id = sbcl.link_el_id
+            JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_%d" AND sbc.cat_id = %d)
+            WHERE spb.p_active = 1
+            ORDER BY sbp.p_id DESC
+            LIMIT %d
+            ', $pluginId, $pluginId, '{CAT_ID}', $count);
+        
+        $previous = sql_assoc($sql);
     }
     
-    $previous = array_shift($previous);
+    if(is_array($previous)) {
+        foreach($previous as $item) {
+            $ids[] = $item['p_id'];
+        }
+    }
     
-    $next = sql_assoc('
-        SELECT sb1.p_url, sb1.p_title, sbc.cat_url FROM sb_plugins_1 sb1
-        JOIN sb_catlinks sbcl ON sb1.p_id = sbcl.link_el_id
-        JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_1" AND sbc.cat_id = ?)
-        WHERE sb1.p_id > ?
-        ORDER BY sb1.p_id DESC
-        LIMIT 1;
-        ',
-        '{CAT_ID}',
-        '{ID}'
-    );
+    $count = count($previous) === 1 ? 2 : 1;
     
-    // var_dump("{CAT_ID}", $next);
+    $sql = sprintf('
+        SELECT sbp.p_id FROM sb_plugins_%d sbp
+        JOIN sb_catlinks sbcl ON sbp.p_id = sbcl.link_el_id
+        JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_%d" AND sbc.cat_id = %d)
+        WHERE sbp.p_active = 1
+        AND sbp.p_id > %d
+        ORDER BY sbp.p_id DESC
+        LIMIT %d
+        ', $pluginId, $pluginId, '{CAT_ID}', '{ID}', $count);
+    
+    $next = sql_assoc($sql);
     
     if(!$next) {
-        $next = sql_assoc('
-            SELECT sb1.p_url, sb1.p_title, sbc.cat_url FROM sb_plugins_1 sb1
-            JOIN sb_catlinks sbcl ON sb1.p_id = sbcl.link_el_id
-            JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_1" AND sbc.cat_id = ?)
-            ORDER BY sb1.p_id
-            LIMIT 1;
-            ',
-            '{CAT_ID}',
-            '{ID}'
-        );
+        $sql = sprintf('
+            SELECT sbp.p_id FROM sb_plugins_%d sbp
+            JOIN sb_catlinks sbcl ON sbp.p_id = sbcl.link_el_id
+            JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_%d" AND sbc.cat_id = %d)
+            WHERE sbp.p_active = 1
+            ORDER BY sbp.p_id
+            LIMIT %d
+            ', $pluginId, $pluginId, '{CAT_ID}', $count);
+        
+        $next = sql_assoc($sql);
     }
     
+    if(is_array($next)) {
+        foreach($next as $item) {
+            $ids[] = $item['p_id'];
+        }
+    }
     
-    $next = array_shift($next);
-    
-    ?>
-</code></pre>
-
-<?php if($previous) { ?>
-<a href="/article/{CAT_URL}/<?= $previous['p_url'] ?>/?test&<?= time() ?>"><?= $previous['p_title'] ?></a>
-<?php } ?>
-/
-<?php if($next) { ?>
-<a href="/article/{CAT_URL}/<?= $next['p_url'] ?>/?test&<?= time() ?>"><?= $next['p_title'] ?></a>
-<?php } ?>
-<?php } ?>
+    echo file_get_contents('/include/products.php?p_f_5_id=' . implode(',', $ids) . '&' . time());
 ```
