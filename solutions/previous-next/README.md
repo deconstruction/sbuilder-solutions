@@ -71,3 +71,15 @@
     
     echo file_get_contents('/include/products.php?p_f_5_id=' . implode(',', $ids) . '&' . time());
 ```
+
+# Чистый SQL
+
+```sql
+SELECT *
+FROM sb_plugins_5 sbp
+JOIN sb_catlinks sbcl ON sbp.p_id = sbcl.link_el_id
+JOIN sb_categs sbc ON (sbcl.link_cat_id = sbc.cat_id AND sbc.cat_ident = "pl_plugin_5" AND sbcl.link_cat_id = 60)
+WHERE sbp.p_active = 1 AND sbp.p_id < 620
+ORDER BY sbp.p_id DESC
+LIMIT 2
+```
