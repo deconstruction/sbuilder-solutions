@@ -7,6 +7,7 @@
 ## Требования
 
 * PHP >= 5.3.
+* Рабочие namespace у проекта. https://github.com/amsetere/sbuilder-solutions/tree/main/solutions/namespaces
 
 ## Ключи
 
