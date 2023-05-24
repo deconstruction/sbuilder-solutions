@@ -11,7 +11,7 @@ const simpleCartConfig = {
     pluginId: 3,
 
     isOrderCreated: () => {
-        return window.location.search.indexOf(`pl${this.pluginId}_id`) != -1
+        return window.location.search.indexOf(`pl${simpleCartConfig.pluginId}_id`) != -1
     }
 }
 
